@@ -22,7 +22,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
 
         this.state = {
             profile: props.profile,
-            showModuleProfiles: false,
+            showModuleProfiles: true,
             showAgentProfiles: false,
             showCycleProfile: false
         }
