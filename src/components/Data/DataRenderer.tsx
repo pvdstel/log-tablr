@@ -27,10 +27,9 @@ export default class DataRenderer extends React.Component<IDataRendererProps, ID
     }
 
     render() {
-        return (
-            <div>
-                {this.state.data.map(atp => <AgentTypeProfileComponent profile={atp} />)}
-            </div>
+        return (<div>
+            {this.state.data.map(atp => <AgentTypeProfileComponent profile={atp} />)}
+        </div>
         )
     }
 }

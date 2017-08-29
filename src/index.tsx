@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom';
 
 import { AgentTypeProfile } from './structures/exportFormat';
 import Header from './components/header';
+import TOC from './components/Data/TOC';
 import DataRenderer from './components/Data/DataRenderer';
 
 document.body.dataset.appLoaded = '';
@@ -21,11 +22,8 @@ function App() {
         <div>
             <Header />
             <hr />
-            <section className='section'>
-                <div className='container'>
-                    <DataRenderer data={data} />
-                </div>
-            </section>
+            <TOC data={data} />
+            <DataRenderer data={data} />
         </div>
     );
 }
