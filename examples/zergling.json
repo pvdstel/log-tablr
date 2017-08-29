@@ -1,0 +1,1863 @@
+{
+  "Name": "zergling",
+  "ModuleProfiles": [
+    {
+      "Name": "ZerglingInit",
+      "Executions": 24,
+      "TotalExecutionTime": 1825,
+      "ShortestExecutionTime": 20,
+      "LongestExcecutionTime": 248
+    },
+    {
+      "Name": "CombatPercepts",
+      "Executions": 4504,
+      "TotalExecutionTime": 468788,
+      "ShortestExecutionTime": 2,
+      "LongestExcecutionTime": 1313
+    },
+    {
+      "Name": "CombatEvent",
+      "Executions": 4498,
+      "TotalExecutionTime": 217178,
+      "ShortestExecutionTime": 1,
+      "LongestExcecutionTime": 715
+    },
+    {
+      "Name": "ZerglingEvent",
+      "Executions": 4504,
+      "TotalExecutionTime": 1008182,
+      "ShortestExecutionTime": 8,
+      "LongestExcecutionTime": 1517
+    },
+    {
+      "Name": "DefendEvent(X1, Y1)",
+      "Executions": 872,
+      "TotalExecutionTime": 25843,
+      "ShortestExecutionTime": 2,
+      "LongestExcecutionTime": 157
+    },
+    {
+      "Name": "Defend(X1, Y1)",
+      "Executions": 872,
+      "TotalExecutionTime": 11686,
+      "ShortestExecutionTime": 0,
+      "LongestExcecutionTime": 212
+    },
+    {
+      "Name": "Act3(Order, X, Y)",
+      "Executions": 215,
+      "TotalExecutionTime": 6319,
+      "ShortestExecutionTime": 1,
+      "LongestExcecutionTime": 130
+    },
+    {
+      "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+      "Executions": 3638,
+      "TotalExecutionTime": 79707,
+      "ShortestExecutionTime": 0,
+      "LongestExcecutionTime": 296
+    },
+    {
+      "Name": "Attack",
+      "Executions": 3555,
+      "TotalExecutionTime": 456095,
+      "ShortestExecutionTime": 11,
+      "LongestExcecutionTime": 587
+    },
+    {
+      "Name": "Zergling",
+      "Executions": 22,
+      "TotalExecutionTime": 2848549,
+      "ShortestExecutionTime": 113274,
+      "LongestExcecutionTime": 147467
+    }
+  ],
+  "AgentProfiles": [
+    {
+      "Name": "zergling_3",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 20,
+          "ShortestExecutionTime": 20,
+          "LongestExcecutionTime": 20
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 191,
+          "TotalExecutionTime": 17071,
+          "ShortestExecutionTime": 4,
+          "LongestExcecutionTime": 822
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 191,
+          "TotalExecutionTime": 9462,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 682
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 191,
+          "TotalExecutionTime": 40683,
+          "ShortestExecutionTime": 11,
+          "LongestExcecutionTime": 1278
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 39,
+          "TotalExecutionTime": 1135,
+          "ShortestExecutionTime": 2,
+          "LongestExcecutionTime": 129
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 39,
+          "TotalExecutionTime": 449,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 67
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 7,
+          "TotalExecutionTime": 152,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 60
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 151,
+          "TotalExecutionTime": 3189,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 136
+        },
+        {
+          "Name": "Attack",
+          "Executions": 149,
+          "TotalExecutionTime": 18409,
+          "ShortestExecutionTime": 11,
+          "LongestExcecutionTime": 327
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 141061,
+          "ShortestExecutionTime": 141061,
+          "LongestExcecutionTime": 141061
+        }
+      ]
+    },
+    {
+      "Name": "zergling_1",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 59,
+          "ShortestExecutionTime": 59,
+          "LongestExcecutionTime": 59
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 189,
+          "TotalExecutionTime": 20576,
+          "ShortestExecutionTime": 5,
+          "LongestExcecutionTime": 875
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 188,
+          "TotalExecutionTime": 9208,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 658
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 189,
+          "TotalExecutionTime": 42869,
+          "ShortestExecutionTime": 19,
+          "LongestExcecutionTime": 1239
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 36,
+          "TotalExecutionTime": 1030,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 157
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 36,
+          "TotalExecutionTime": 321,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 65
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 9,
+          "TotalExecutionTime": 127,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 26
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 153,
+          "TotalExecutionTime": 3126,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 171
+        },
+        {
+          "Name": "Attack",
+          "Executions": 150,
+          "TotalExecutionTime": 18694,
+          "ShortestExecutionTime": 24,
+          "LongestExcecutionTime": 281
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 144319,
+          "ShortestExecutionTime": 144319,
+          "LongestExcecutionTime": 144319
+        }
+      ]
+    },
+    {
+      "Name": "zergling_5",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 21,
+          "ShortestExecutionTime": 21,
+          "LongestExcecutionTime": 21
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 192,
+          "TotalExecutionTime": 19259,
+          "ShortestExecutionTime": 4,
+          "LongestExcecutionTime": 763
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 191,
+          "TotalExecutionTime": 9758,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 656
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 192,
+          "TotalExecutionTime": 42490,
+          "ShortestExecutionTime": 16,
+          "LongestExcecutionTime": 1190
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 41,
+          "TotalExecutionTime": 956,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 92
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 41,
+          "TotalExecutionTime": 660,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 83
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 7,
+          "TotalExecutionTime": 171,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 78
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 153,
+          "TotalExecutionTime": 2678,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 236
+        },
+        {
+          "Name": "Attack",
+          "Executions": 149,
+          "TotalExecutionTime": 17610,
+          "ShortestExecutionTime": 20,
+          "LongestExcecutionTime": 373
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 138028,
+          "ShortestExecutionTime": 138028,
+          "LongestExcecutionTime": 138028
+        }
+      ]
+    },
+    {
+      "Name": "zergling_0",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 53,
+          "ShortestExecutionTime": 53,
+          "LongestExcecutionTime": 53
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 203,
+          "TotalExecutionTime": 18856,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 751
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 202,
+          "TotalExecutionTime": 8967,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 539
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 203,
+          "TotalExecutionTime": 41476,
+          "ShortestExecutionTime": 21,
+          "LongestExcecutionTime": 1141
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 53,
+          "TotalExecutionTime": 1297,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 110
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 53,
+          "TotalExecutionTime": 659,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 142
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 12,
+          "TotalExecutionTime": 471,
+          "ShortestExecutionTime": 5,
+          "LongestExcecutionTime": 130
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 153,
+          "TotalExecutionTime": 4388,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 248
+        },
+        {
+          "Name": "Attack",
+          "Executions": 148,
+          "TotalExecutionTime": 21621,
+          "ShortestExecutionTime": 15,
+          "LongestExcecutionTime": 437
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 147445,
+          "ShortestExecutionTime": 147445,
+          "LongestExcecutionTime": 147445
+        }
+      ]
+    },
+    {
+      "Name": "zergling_4",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 53,
+          "ShortestExecutionTime": 53,
+          "LongestExcecutionTime": 53
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 189,
+          "TotalExecutionTime": 19712,
+          "ShortestExecutionTime": 6,
+          "LongestExcecutionTime": 1104
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 189,
+          "TotalExecutionTime": 8343,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 540
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 189,
+          "TotalExecutionTime": 42180,
+          "ShortestExecutionTime": 12,
+          "LongestExcecutionTime": 1212
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 37,
+          "TotalExecutionTime": 1177,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 103
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 37,
+          "TotalExecutionTime": 376,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 72
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 7,
+          "TotalExecutionTime": 147,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 35
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 152,
+          "TotalExecutionTime": 3421,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 130
+        },
+        {
+          "Name": "Attack",
+          "Executions": 149,
+          "TotalExecutionTime": 17617,
+          "ShortestExecutionTime": 14,
+          "LongestExcecutionTime": 330
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 141066,
+          "ShortestExecutionTime": 141066,
+          "LongestExcecutionTime": 141066
+        }
+      ]
+    },
+    {
+      "Name": "zergling_2",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 79,
+          "ShortestExecutionTime": 79,
+          "LongestExcecutionTime": 79
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 207,
+          "TotalExecutionTime": 18733,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 1150
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 206,
+          "TotalExecutionTime": 8596,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 581
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 207,
+          "TotalExecutionTime": 41420,
+          "ShortestExecutionTime": 16,
+          "LongestExcecutionTime": 1449
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 59,
+          "TotalExecutionTime": 1321,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 95
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 59,
+          "TotalExecutionTime": 598,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 71
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 12,
+          "TotalExecutionTime": 543,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 117
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 150,
+          "TotalExecutionTime": 3494,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 209
+        },
+        {
+          "Name": "Attack",
+          "Executions": 146,
+          "TotalExecutionTime": 21175,
+          "ShortestExecutionTime": 29,
+          "LongestExcecutionTime": 442
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 144297,
+          "ShortestExecutionTime": 144297,
+          "LongestExcecutionTime": 144297
+        }
+      ]
+    },
+    {
+      "Name": "zergling_6",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 46,
+          "ShortestExecutionTime": 46,
+          "LongestExcecutionTime": 46
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 205,
+          "TotalExecutionTime": 20666,
+          "ShortestExecutionTime": 2,
+          "LongestExcecutionTime": 976
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 205,
+          "TotalExecutionTime": 8768,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 526
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 205,
+          "TotalExecutionTime": 43859,
+          "ShortestExecutionTime": 16,
+          "LongestExcecutionTime": 1050
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 56,
+          "TotalExecutionTime": 1472,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 154
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 56,
+          "TotalExecutionTime": 490,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 106
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 7,
+          "TotalExecutionTime": 190,
+          "ShortestExecutionTime": 7,
+          "LongestExcecutionTime": 81
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 152,
+          "TotalExecutionTime": 3321,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 129
+        },
+        {
+          "Name": "Attack",
+          "Executions": 146,
+          "TotalExecutionTime": 17318,
+          "ShortestExecutionTime": 13,
+          "LongestExcecutionTime": 363
+        }
+      ]
+    },
+    {
+      "Name": "zergling_12",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 59,
+          "ShortestExecutionTime": 59,
+          "LongestExcecutionTime": 59
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 186,
+          "TotalExecutionTime": 19205,
+          "ShortestExecutionTime": 4,
+          "LongestExcecutionTime": 1147
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 186,
+          "TotalExecutionTime": 8636,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 715
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 186,
+          "TotalExecutionTime": 41338,
+          "ShortestExecutionTime": 16,
+          "LongestExcecutionTime": 1343
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 32,
+          "TotalExecutionTime": 960,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 141
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 32,
+          "TotalExecutionTime": 445,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 101
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 12,
+          "TotalExecutionTime": 525,
+          "ShortestExecutionTime": 11,
+          "LongestExcecutionTime": 98
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 153,
+          "TotalExecutionTime": 3475,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 219
+        },
+        {
+          "Name": "Attack",
+          "Executions": 151,
+          "TotalExecutionTime": 20435,
+          "ShortestExecutionTime": 16,
+          "LongestExcecutionTime": 373
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 126935,
+          "ShortestExecutionTime": 126935,
+          "LongestExcecutionTime": 126935
+        }
+      ]
+    },
+    {
+      "Name": "zergling_7",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 47,
+          "ShortestExecutionTime": 47,
+          "LongestExcecutionTime": 47
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 184,
+          "TotalExecutionTime": 19103,
+          "ShortestExecutionTime": 5,
+          "LongestExcecutionTime": 1002
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 184,
+          "TotalExecutionTime": 8637,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 485
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 184,
+          "TotalExecutionTime": 41781,
+          "ShortestExecutionTime": 13,
+          "LongestExcecutionTime": 1450
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 35,
+          "TotalExecutionTime": 1042,
+          "ShortestExecutionTime": 4,
+          "LongestExcecutionTime": 107
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 35,
+          "TotalExecutionTime": 427,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 101
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 11,
+          "TotalExecutionTime": 274,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 71
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 148,
+          "TotalExecutionTime": 2848,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 293
+        },
+        {
+          "Name": "Attack",
+          "Executions": 145,
+          "TotalExecutionTime": 20838,
+          "ShortestExecutionTime": 18,
+          "LongestExcecutionTime": 412
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 132677,
+          "ShortestExecutionTime": 132677,
+          "LongestExcecutionTime": 132677
+        }
+      ]
+    },
+    {
+      "Name": "zergling_9",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 44,
+          "ShortestExecutionTime": 44,
+          "LongestExcecutionTime": 44
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 197,
+          "TotalExecutionTime": 19981,
+          "ShortestExecutionTime": 5,
+          "LongestExcecutionTime": 1188
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 197,
+          "TotalExecutionTime": 9131,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 444
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 197,
+          "TotalExecutionTime": 42900,
+          "ShortestExecutionTime": 12,
+          "LongestExcecutionTime": 1271
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 42,
+          "TotalExecutionTime": 1005,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 89
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 42,
+          "TotalExecutionTime": 487,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 129
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 6,
+          "TotalExecutionTime": 143,
+          "ShortestExecutionTime": 6,
+          "LongestExcecutionTime": 51
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 155,
+          "TotalExecutionTime": 3316,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 246
+        },
+        {
+          "Name": "Attack",
+          "Executions": 150,
+          "TotalExecutionTime": 17998,
+          "ShortestExecutionTime": 17,
+          "LongestExcecutionTime": 316
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 130720,
+          "ShortestExecutionTime": 130720,
+          "LongestExcecutionTime": 130720
+        }
+      ]
+    },
+    {
+      "Name": "zergling_10",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 119,
+          "ShortestExecutionTime": 119,
+          "LongestExcecutionTime": 119
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 191,
+          "TotalExecutionTime": 21036,
+          "ShortestExecutionTime": 2,
+          "LongestExcecutionTime": 998
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 191,
+          "TotalExecutionTime": 9733,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 579
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 191,
+          "TotalExecutionTime": 44408,
+          "ShortestExecutionTime": 22,
+          "LongestExcecutionTime": 1321
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 37,
+          "TotalExecutionTime": 938,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 80
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 37,
+          "TotalExecutionTime": 353,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 65
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 7,
+          "TotalExecutionTime": 169,
+          "ShortestExecutionTime": 12,
+          "LongestExcecutionTime": 45
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 154,
+          "TotalExecutionTime": 2993,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 172
+        },
+        {
+          "Name": "Attack",
+          "Executions": 151,
+          "TotalExecutionTime": 17364,
+          "ShortestExecutionTime": 14,
+          "LongestExcecutionTime": 274
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 130654,
+          "ShortestExecutionTime": 130654,
+          "LongestExcecutionTime": 130654
+        }
+      ]
+    },
+    {
+      "Name": "zergling_11",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 54,
+          "ShortestExecutionTime": 54,
+          "LongestExcecutionTime": 54
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 186,
+          "TotalExecutionTime": 18532,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 754
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 186,
+          "TotalExecutionTime": 9026,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 580
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 186,
+          "TotalExecutionTime": 40435,
+          "ShortestExecutionTime": 14,
+          "LongestExcecutionTime": 1257
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 32,
+          "TotalExecutionTime": 1055,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 132
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 32,
+          "TotalExecutionTime": 494,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 105
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 7,
+          "TotalExecutionTime": 126,
+          "ShortestExecutionTime": 2,
+          "LongestExcecutionTime": 31
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 154,
+          "TotalExecutionTime": 3464,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 205
+        },
+        {
+          "Name": "Attack",
+          "Executions": 151,
+          "TotalExecutionTime": 17717,
+          "ShortestExecutionTime": 16,
+          "LongestExcecutionTime": 317
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 126962,
+          "ShortestExecutionTime": 126962,
+          "LongestExcecutionTime": 126962
+        }
+      ]
+    },
+    {
+      "Name": "zergling_13",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 121,
+          "ShortestExecutionTime": 121,
+          "LongestExcecutionTime": 121
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 179,
+          "TotalExecutionTime": 19346,
+          "ShortestExecutionTime": 4,
+          "LongestExcecutionTime": 956
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 179,
+          "TotalExecutionTime": 8258,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 666
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 179,
+          "TotalExecutionTime": 41058,
+          "ShortestExecutionTime": 13,
+          "LongestExcecutionTime": 1510
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 27,
+          "TotalExecutionTime": 1099,
+          "ShortestExecutionTime": 4,
+          "LongestExcecutionTime": 109
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 27,
+          "TotalExecutionTime": 413,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 96
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 12,
+          "TotalExecutionTime": 364,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 75
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 150,
+          "TotalExecutionTime": 3495,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 266
+        },
+        {
+          "Name": "Attack",
+          "Executions": 147,
+          "TotalExecutionTime": 20148,
+          "ShortestExecutionTime": 20,
+          "LongestExcecutionTime": 587
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 120920,
+          "ShortestExecutionTime": 120920,
+          "LongestExcecutionTime": 120920
+        }
+      ]
+    },
+    {
+      "Name": "zergling_14",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 51,
+          "ShortestExecutionTime": 51,
+          "LongestExcecutionTime": 51
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 174,
+          "TotalExecutionTime": 20303,
+          "ShortestExecutionTime": 7,
+          "LongestExcecutionTime": 933
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 174,
+          "TotalExecutionTime": 8609,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 672
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 174,
+          "TotalExecutionTime": 41295,
+          "ShortestExecutionTime": 12,
+          "LongestExcecutionTime": 1085
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 23,
+          "TotalExecutionTime": 765,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 118
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 23,
+          "TotalExecutionTime": 329,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 81
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 8,
+          "TotalExecutionTime": 120,
+          "ShortestExecutionTime": 5,
+          "LongestExcecutionTime": 20
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 151,
+          "TotalExecutionTime": 3476,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 158
+        },
+        {
+          "Name": "Attack",
+          "Executions": 148,
+          "TotalExecutionTime": 17774,
+          "ShortestExecutionTime": 16,
+          "LongestExcecutionTime": 307
+        }
+      ]
+    },
+    {
+      "Name": "zergling_16",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 37,
+          "ShortestExecutionTime": 37,
+          "LongestExcecutionTime": 37
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 188,
+          "TotalExecutionTime": 20058,
+          "ShortestExecutionTime": 4,
+          "LongestExcecutionTime": 884
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 187,
+          "TotalExecutionTime": 9288,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 570
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 188,
+          "TotalExecutionTime": 42842,
+          "ShortestExecutionTime": 24,
+          "LongestExcecutionTime": 1229
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 35,
+          "TotalExecutionTime": 1122,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 133
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 35,
+          "TotalExecutionTime": 579,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 77
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 11,
+          "TotalExecutionTime": 476,
+          "ShortestExecutionTime": 6,
+          "LongestExcecutionTime": 111
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 152,
+          "TotalExecutionTime": 3405,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 224
+        },
+        {
+          "Name": "Attack",
+          "Executions": 149,
+          "TotalExecutionTime": 19773,
+          "ShortestExecutionTime": 13,
+          "LongestExcecutionTime": 392
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 120772,
+          "ShortestExecutionTime": 120772,
+          "LongestExcecutionTime": 120772
+        }
+      ]
+    },
+    {
+      "Name": "zergling_15",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 72,
+          "ShortestExecutionTime": 72,
+          "LongestExcecutionTime": 72
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 179,
+          "TotalExecutionTime": 19121,
+          "ShortestExecutionTime": 5,
+          "LongestExcecutionTime": 961
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 179,
+          "TotalExecutionTime": 9110,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 698
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 179,
+          "TotalExecutionTime": 40693,
+          "ShortestExecutionTime": 17,
+          "LongestExcecutionTime": 1196
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 25,
+          "TotalExecutionTime": 1031,
+          "ShortestExecutionTime": 7,
+          "LongestExcecutionTime": 101
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 25,
+          "TotalExecutionTime": 439,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 120
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 7,
+          "TotalExecutionTime": 244,
+          "ShortestExecutionTime": 7,
+          "LongestExcecutionTime": 81
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 152,
+          "TotalExecutionTime": 3113,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 177
+        },
+        {
+          "Name": "Attack",
+          "Executions": 150,
+          "TotalExecutionTime": 17257,
+          "ShortestExecutionTime": 16,
+          "LongestExcecutionTime": 357
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 120843,
+          "ShortestExecutionTime": 120843,
+          "LongestExcecutionTime": 120843
+        }
+      ]
+    },
+    {
+      "Name": "zergling_18",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 88,
+          "ShortestExecutionTime": 88,
+          "LongestExcecutionTime": 88
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 181,
+          "TotalExecutionTime": 20635,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 1141
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 181,
+          "TotalExecutionTime": 9549,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 637
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 181,
+          "TotalExecutionTime": 44124,
+          "ShortestExecutionTime": 27,
+          "LongestExcecutionTime": 1231
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 30,
+          "TotalExecutionTime": 926,
+          "ShortestExecutionTime": 5,
+          "LongestExcecutionTime": 99
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 30,
+          "TotalExecutionTime": 681,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 212
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 8,
+          "TotalExecutionTime": 157,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 44
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 152,
+          "TotalExecutionTime": 3076,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 209
+        },
+        {
+          "Name": "Attack",
+          "Executions": 148,
+          "TotalExecutionTime": 16960,
+          "ShortestExecutionTime": 16,
+          "LongestExcecutionTime": 302
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 119464,
+          "ShortestExecutionTime": 119464,
+          "LongestExcecutionTime": 119464
+        }
+      ]
+    },
+    {
+      "Name": "zergling_17",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 81,
+          "ShortestExecutionTime": 81,
+          "LongestExcecutionTime": 81
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 186,
+          "TotalExecutionTime": 18869,
+          "ShortestExecutionTime": 4,
+          "LongestExcecutionTime": 1048
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 186,
+          "TotalExecutionTime": 9587,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 564
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 186,
+          "TotalExecutionTime": 41819,
+          "ShortestExecutionTime": 26,
+          "LongestExcecutionTime": 1287
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 38,
+          "TotalExecutionTime": 1088,
+          "ShortestExecutionTime": 6,
+          "LongestExcecutionTime": 144
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 38,
+          "TotalExecutionTime": 538,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 141
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 11,
+          "TotalExecutionTime": 327,
+          "ShortestExecutionTime": 8,
+          "LongestExcecutionTime": 92
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 148,
+          "TotalExecutionTime": 3506,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 209
+        },
+        {
+          "Name": "Attack",
+          "Executions": 145,
+          "TotalExecutionTime": 19939,
+          "ShortestExecutionTime": 24,
+          "LongestExcecutionTime": 358
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 119547,
+          "ShortestExecutionTime": 119547,
+          "LongestExcecutionTime": 119547
+        }
+      ]
+    },
+    {
+      "Name": "zergling_8",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 39,
+          "ShortestExecutionTime": 39,
+          "LongestExcecutionTime": 39
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 189,
+          "TotalExecutionTime": 17921,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 839
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 189,
+          "TotalExecutionTime": 9278,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 564
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 189,
+          "TotalExecutionTime": 40057,
+          "ShortestExecutionTime": 8,
+          "LongestExcecutionTime": 1133
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 38,
+          "TotalExecutionTime": 1510,
+          "ShortestExecutionTime": 5,
+          "LongestExcecutionTime": 120
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 38,
+          "TotalExecutionTime": 734,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 179
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 12,
+          "TotalExecutionTime": 371,
+          "ShortestExecutionTime": 2,
+          "LongestExcecutionTime": 122
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 151,
+          "TotalExecutionTime": 4012,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 203
+        },
+        {
+          "Name": "Attack",
+          "Executions": 147,
+          "TotalExecutionTime": 21356,
+          "ShortestExecutionTime": 32,
+          "LongestExcecutionTime": 418
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 132751,
+          "ShortestExecutionTime": 132751,
+          "LongestExcecutionTime": 132751
+        }
+      ]
+    },
+    {
+      "Name": "zergling",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 108,
+          "ShortestExecutionTime": 108,
+          "LongestExcecutionTime": 108
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 202,
+          "TotalExecutionTime": 21032,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 1313
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 202,
+          "TotalExecutionTime": 8618,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 435
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 202,
+          "TotalExecutionTime": 43063,
+          "ShortestExecutionTime": 16,
+          "LongestExcecutionTime": 1363
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 49,
+          "TotalExecutionTime": 1136,
+          "ShortestExecutionTime": 2,
+          "LongestExcecutionTime": 77
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 49,
+          "TotalExecutionTime": 515,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 86
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 7,
+          "TotalExecutionTime": 193,
+          "ShortestExecutionTime": 4,
+          "LongestExcecutionTime": 52
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 152,
+          "TotalExecutionTime": 2833,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 138
+        },
+        {
+          "Name": "Attack",
+          "Executions": 150,
+          "TotalExecutionTime": 16777,
+          "ShortestExecutionTime": 18,
+          "LongestExcecutionTime": 341
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 147467,
+          "ShortestExecutionTime": 147467,
+          "LongestExcecutionTime": 147467
+        }
+      ]
+    },
+    {
+      "Name": "zergling_19",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 76,
+          "ShortestExecutionTime": 76,
+          "LongestExcecutionTime": 76
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 184,
+          "TotalExecutionTime": 21225,
+          "ShortestExecutionTime": 3,
+          "LongestExcecutionTime": 1121
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 184,
+          "TotalExecutionTime": 8890,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 425
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 184,
+          "TotalExecutionTime": 43908,
+          "ShortestExecutionTime": 8,
+          "LongestExcecutionTime": 1305
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 33,
+          "TotalExecutionTime": 1014,
+          "ShortestExecutionTime": 6,
+          "LongestExcecutionTime": 137
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 33,
+          "TotalExecutionTime": 482,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 83
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 7,
+          "TotalExecutionTime": 113,
+          "ShortestExecutionTime": 2,
+          "LongestExcecutionTime": 34
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 155,
+          "TotalExecutionTime": 2927,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 128
+        },
+        {
+          "Name": "Attack",
+          "Executions": 148,
+          "TotalExecutionTime": 17374,
+          "ShortestExecutionTime": 22,
+          "LongestExcecutionTime": 346
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 118003,
+          "ShortestExecutionTime": 118003,
+          "LongestExcecutionTime": 118003
+        }
+      ]
+    },
+    {
+      "Name": "zergling_21",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 248,
+          "ShortestExecutionTime": 248,
+          "LongestExcecutionTime": 248
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 167,
+          "TotalExecutionTime": 18478,
+          "ShortestExecutionTime": 2,
+          "LongestExcecutionTime": 1055
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 166,
+          "TotalExecutionTime": 9830,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 683
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 167,
+          "TotalExecutionTime": 40927,
+          "ShortestExecutionTime": 42,
+          "LongestExcecutionTime": 1463
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 21,
+          "TotalExecutionTime": 894,
+          "ShortestExecutionTime": 10,
+          "LongestExcecutionTime": 117
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 12,
+          "TotalExecutionTime": 365,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 84
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 147,
+          "TotalExecutionTime": 3640,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 296
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 21,
+          "TotalExecutionTime": 377,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 107
+        },
+        {
+          "Name": "Attack",
+          "Executions": 145,
+          "TotalExecutionTime": 21183,
+          "ShortestExecutionTime": 19,
+          "LongestExcecutionTime": 411
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 113415,
+          "ShortestExecutionTime": 113415,
+          "LongestExcecutionTime": 113415
+        }
+      ]
+    },
+    {
+      "Name": "zergling_20",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 68,
+          "ShortestExecutionTime": 68,
+          "LongestExcecutionTime": 68
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 183,
+          "TotalExecutionTime": 18309,
+          "ShortestExecutionTime": 4,
+          "LongestExcecutionTime": 1268
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 183,
+          "TotalExecutionTime": 8791,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 629
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 183,
+          "TotalExecutionTime": 40627,
+          "ShortestExecutionTime": 30,
+          "LongestExcecutionTime": 1517
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 34,
+          "TotalExecutionTime": 1193,
+          "ShortestExecutionTime": 6,
+          "LongestExcecutionTime": 97
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 34,
+          "TotalExecutionTime": 390,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 78
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 7,
+          "TotalExecutionTime": 294,
+          "ShortestExecutionTime": 13,
+          "LongestExcecutionTime": 94
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 149,
+          "TotalExecutionTime": 2556,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 196
+        },
+        {
+          "Name": "Attack",
+          "Executions": 145,
+          "TotalExecutionTime": 20881,
+          "ShortestExecutionTime": 24,
+          "LongestExcecutionTime": 356
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 117929,
+          "ShortestExecutionTime": 117929,
+          "LongestExcecutionTime": 117929
+        }
+      ]
+    },
+    {
+      "Name": "zergling_22",
+      "ModuleProfiles": [
+        {
+          "Name": "ZerglingInit",
+          "Executions": 1,
+          "TotalExecutionTime": 182,
+          "ShortestExecutionTime": 182,
+          "LongestExcecutionTime": 182
+        },
+        {
+          "Name": "CombatPercepts",
+          "Executions": 172,
+          "TotalExecutionTime": 20761,
+          "ShortestExecutionTime": 4,
+          "LongestExcecutionTime": 902
+        },
+        {
+          "Name": "CombatEvent",
+          "Executions": 172,
+          "TotalExecutionTime": 9105,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 402
+        },
+        {
+          "Name": "ZerglingEvent",
+          "Executions": 172,
+          "TotalExecutionTime": 41930,
+          "ShortestExecutionTime": 51,
+          "LongestExcecutionTime": 1256
+        },
+        {
+          "Name": "DefendEvent(X1, Y1)",
+          "Executions": 20,
+          "TotalExecutionTime": 677,
+          "ShortestExecutionTime": 5,
+          "LongestExcecutionTime": 81
+        },
+        {
+          "Name": "Act3(Order, X, Y)",
+          "Executions": 9,
+          "TotalExecutionTime": 257,
+          "ShortestExecutionTime": 7,
+          "LongestExcecutionTime": 94
+        },
+        {
+          "Name": "ChangeTarget3(NewOrder, NewX, NewY)",
+          "Executions": 151,
+          "TotalExecutionTime": 3955,
+          "ShortestExecutionTime": 0,
+          "LongestExcecutionTime": 215
+        },
+        {
+          "Name": "Defend(X1, Y1)",
+          "Executions": 20,
+          "TotalExecutionTime": 450,
+          "ShortestExecutionTime": 1,
+          "LongestExcecutionTime": 96
+        },
+        {
+          "Name": "Attack",
+          "Executions": 148,
+          "TotalExecutionTime": 19877,
+          "ShortestExecutionTime": 21,
+          "LongestExcecutionTime": 371
+        },
+        {
+          "Name": "Zergling",
+          "Executions": 1,
+          "TotalExecutionTime": 113274,
+          "ShortestExecutionTime": 113274,
+          "LongestExcecutionTime": 113274
+        }
+      ]
+    }
+  ]
+}
