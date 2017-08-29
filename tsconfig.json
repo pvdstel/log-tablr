@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "jsx": "react",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "target": "es2017",
+        "outDir": "tsc-output",
+        "noImplicitAny": true,
+        "noImplicitThis": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "removeComments": true,
+        "forceConsistentCasingInFileNames": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "pretty": true
+    }
+}

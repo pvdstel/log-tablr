@@ -1,3 +1,15 @@
+dist/*
+!dist/index.html
+!dist/web.config
+
+
+
+
+
+
+
+
+
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
