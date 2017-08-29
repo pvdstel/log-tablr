@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { ExportFormat } from './structures/exportFormat';
+import { AgentTypeProfile } from './structures/exportFormat';
 import Header from './components/header';
 import DataRenderer from './components/Data/DataRenderer';
 
@@ -12,7 +12,7 @@ require('bulma/bulma.sass');
 require('./styles/style.scss');
 
 function App() {
-    let data: ExportFormat, dataContainer = document.getElementById('data-container');
+    let data: AgentTypeProfile, dataContainer = document.getElementById('data-container');
     if (dataContainer) {
         data = JSON.parse(dataContainer.innerHTML);
     }

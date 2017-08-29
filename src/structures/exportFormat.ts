@@ -1,4 +1,4 @@
-export interface ExportFormat {
+export interface AgentTypeProfile {
     Name: string;
     ModuleProfiles: ModuleProfile[];
     AgentProfile: AgentProfile[];

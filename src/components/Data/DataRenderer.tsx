@@ -1,14 +1,14 @@
 import * as React from 'react';
 
-import { ExportFormat } from 'src/structures/exportFormat';
+import { AgentTypeProfile } from 'src/structures/exportFormat';
 import ModuleProfiles from './ModuleProfiles';
 
 export interface IDataRendererProps {
-    data: ExportFormat;
+    data: AgentTypeProfile;
 }
 
 interface IDataRendererState {
-    data: ExportFormat;
+    data: AgentTypeProfile;
 }
 
 export default class DataRenderer extends React.Component<IDataRendererProps, IDataRendererState> {
