@@ -12,6 +12,7 @@ export interface IAgentTypeProfileProps {
 interface IAgentTypeProfileState {
     profile: AgentTypeProfileDataType;
     showModuleProfiles: boolean;
+    agentName: string;
     showAgentProfiles: boolean;
     showCycleProfile: boolean;
 }
@@ -22,6 +23,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
 
         this.state = {
             profile: props.profile,
+            agentName: '*',
             showModuleProfiles: true,
             showAgentProfiles: false,
             showCycleProfile: false
@@ -31,6 +33,14 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
     private onToggleModuleProfilesClicked = (e: React.SyntheticEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         this.setState({ showModuleProfiles: !this.state.showModuleProfiles });
+    }
+
+    private onAgentNameSelectChanged = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        this.setState({ agentName: e.target.value });
+    }
+
+    private agentNameFilterPredicate = (atp: AgentTypeProfileDataType) => {
+        return this.state.agentName === '*' || this.state.agentName === atp.Name;
     }
 
     private onToggleAgentProfilesClicked = (e: React.SyntheticEvent<HTMLAnchorElement>) => {
@@ -78,7 +88,19 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                              </a>
                         </p>
                         {this.state.showAgentProfiles &&
-                            this.state.profile.AgentProfiles.map(ap => <AgentProfile key={ap.Name} agentProfile={ap} />)
+                            <div className='select bottom-p-spacing'>
+                                <select onChange={this.onAgentNameSelectChanged}>
+                                    <option value='*'>Display all</option>
+                                    <optgroup label='Data'>
+                                        {this.state.profile.AgentProfiles.map(atp => (
+                                            <option key={atp.Name} value={atp.Name}>{atp.Name}</option>
+                                        ))}
+                                    </optgroup>
+                                </select>
+                            </div>
+                        }
+                        {this.state.showAgentProfiles &&
+                            this.state.profile.AgentProfiles.filter(this.agentNameFilterPredicate).map(ap => <AgentProfile key={ap.Name} agentProfile={ap} />)
                         }
 
                         <h3 className='title is-3 has-text-grey'>Cycle profile</h3>

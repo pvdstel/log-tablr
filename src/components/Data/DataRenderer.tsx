@@ -24,7 +24,6 @@ export default class DataRenderer extends React.Component<IDataRendererProps, ID
     }
 
     private agentTypeFilterPredicate = (atp: AgentTypeProfile) => {
-        console.log(this.state.agentTypeFilter);
         return this.state.agentTypeFilter === '*' || this.state.agentTypeFilter === atp.Name;
     } 
 
