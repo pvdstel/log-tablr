@@ -44,6 +44,17 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
         return (
             <section className='section'>
                 <div className='container'>
+                    <div className='select'>
+                        <select value={this.state.agentType} onChange={this.onAgentTypeSelectChanged}>
+                            <option value='*'>Display all</option>
+                            <optgroup label='Data'>
+                                {this.state.data.map(atp => (
+                                    <option key={atp.Name} value={atp.Name}>{atp.Name}</option>
+                                ))}
+                            </optgroup>
+                        </select>
+                    </div>
+                    {this.state.agentType === '*' && <hr />}
                     {this.state.agentType === '*' &&
                         <h2 className='title is-2' id='toc'>
                             Table of contents
@@ -58,17 +69,6 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
                             ))}
                         </ul>
                     }
-                    {this.state.agentType === '*' && <hr />}
-                    <div className='select'>
-                        <select value={this.state.agentType} onChange={this.onAgentTypeSelectChanged}>
-                            <option value='*'>Display all</option>
-                            <optgroup label='Data'>
-                                {this.state.data.map(atp => (
-                                    <option key={atp.Name} value={atp.Name}>{atp.Name}</option>
-                                ))}
-                            </optgroup>
-                        </select>
-                    </div>
                 </div>
             </section>
         )
