@@ -1,14 +1,14 @@
 import * as React from 'react';
 
 import { AgentTypeProfile } from 'src/structures/exportFormat';
-import ModuleProfiles from './ModuleProfiles';
+import AgentTypeProfileComponent from './AgentTypeProfile';
 
 export interface IDataRendererProps {
-    data: AgentTypeProfile;
+    data: AgentTypeProfile[];
 }
 
 interface IDataRendererState {
-    data: AgentTypeProfile;
+    data: AgentTypeProfile[];
 }
 
 export default class DataRenderer extends React.Component<IDataRendererProps, IDataRendererState> {
@@ -29,7 +29,7 @@ export default class DataRenderer extends React.Component<IDataRendererProps, ID
     render() {
         return (
             <div>
-                <ModuleProfiles moduleProfiles={this.state.data.ModuleProfiles} />
+                {this.state.data.map(atp => <AgentTypeProfileComponent profile={atp} />)}
             </div>
         )
     }

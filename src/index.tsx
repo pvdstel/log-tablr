@@ -12,7 +12,7 @@ require('bulma/bulma.sass');
 require('./styles/style.scss');
 
 function App() {
-    let data: AgentTypeProfile, dataContainer = document.getElementById('data-container');
+    let data: AgentTypeProfile[], dataContainer = document.getElementById('data-container');
     if (dataContainer) {
         data = JSON.parse(dataContainer.innerHTML);
     }
