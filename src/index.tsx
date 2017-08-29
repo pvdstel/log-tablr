@@ -7,7 +7,9 @@ import DataRenderer from './components/Data/DataRenderer';
 
 document.body.dataset.appLoaded = '';
 
+// Require the css files
 require('bulma/bulma.sass');
+require('./styles/style.scss');
 
 function App() {
     let data: ExportFormat, dataContainer = document.getElementById('data-container');

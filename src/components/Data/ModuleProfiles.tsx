@@ -28,7 +28,8 @@ export default class ModuleProfiles extends React.Component<IModuleProfilesProps
     render() {
         return (
             <section>
-                <table>
+                <h2 className='title is-2'>Module profiles</h2>
+                <table className='table is-striped'>
                     <thead>
                         <tr>
                             <th>Name</th>
