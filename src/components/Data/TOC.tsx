@@ -9,6 +9,7 @@ export interface ITableOfContentsProps {
 
 interface ITableOfContentsState {
     data: AgentTypeProfile[];
+    agentType: string;
     onAgentTypeChanged: (type: string) => any;
 }
 
@@ -18,11 +19,13 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
 
         this.state = {
             data: props.data,
+            agentType: '*',
             onAgentTypeChanged: props.onAgentTypeChanged
         }
     }
 
     private onAgentTypeSelectChanged = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        this.setState({ agentType: e.target.value });
         if (this.state.onAgentTypeChanged) {
             this.state.onAgentTypeChanged(e.target.value);
         }
@@ -41,19 +44,23 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
         return (
             <section className='section'>
                 <div className='container'>
-                    <h2 className='title is-2' id='toc'>
-                        Table of contents
-                    </h2>
-                    <ul>
-                        {this.state.data.map(atp => (
-                            <li key={atp.Name}>
-                                <a href={`#${atp.Name}`}>{atp.Name}</a>
-                            </li>
-                        ))}
-                    </ul>
-                    <hr />
+                    {this.state.agentType === '*' &&
+                        <h2 className='title is-2' id='toc'>
+                            Table of contents
+                        </h2>
+                    }
+                    {this.state.agentType === '*' &&
+                        <ul>
+                            {this.state.data.map(atp => (
+                                <li key={atp.Name}>
+                                    <a href={`#${atp.Name}`}>{atp.Name}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    }
+                    {this.state.agentType === '*' && <hr />}
                     <div className='select'>
-                        <select onChange={this.onAgentTypeSelectChanged}>
+                        <select value={this.state.agentType} onChange={this.onAgentTypeSelectChanged}>
                             <option value='*'>Display all</option>
                             <optgroup label='Data'>
                                 {this.state.data.map(atp => (
