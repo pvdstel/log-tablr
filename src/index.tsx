@@ -12,20 +12,38 @@ document.body.dataset.appLoaded = '';
 require('bulma/bulma.sass');
 require('./styles/style.scss');
 
-function App() {
-    let data: AgentTypeProfile[], dataContainer = document.getElementById('data-container');
-    if (dataContainer) {
-        data = JSON.parse(dataContainer.innerHTML);
+interface IAppState {
+    data: AgentTypeProfile[];
+    agentType: string;
+}
+
+export default class App extends React.Component<undefined, IAppState> {
+    constructor() {
+        super();
+
+        this.state = {
+            data: [],
+            agentType: '*'
+        }
     }
 
-    return (
-        <div>
-            <Header />
-            <hr />
-            <TOC data={data} />
-            <DataRenderer data={data} />
-        </div>
-    );
+    componentDidMount() {
+        let dataContainer = document.getElementById('data-container');
+        if (dataContainer) {
+            this.setState({ data: JSON.parse(dataContainer.innerHTML) })
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <Header />
+                <hr />
+                <TOC data={this.state.data} onAgentTypeChanged={t => this.setState({ agentType: t })} />
+                <DataRenderer data={this.state.data} agentTypeFilter={this.state.agentType} />
+            </div>
+        );
+    }
 }
 
 const root = document.querySelector('#app');

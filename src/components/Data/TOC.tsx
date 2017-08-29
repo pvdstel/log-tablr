@@ -4,10 +4,12 @@ import { AgentTypeProfile } from 'src/structures/exportFormat';
 
 export interface ITableOfContentsProps {
     data: AgentTypeProfile[];
+    onAgentTypeChanged?: (type: string) => any;
 }
 
 interface ITableOfContentsState {
     data: AgentTypeProfile[];
+    onAgentTypeChanged: (type: string) => any;
 }
 
 export default class TableOfContents extends React.Component<ITableOfContentsProps, ITableOfContentsState> {
@@ -15,13 +17,23 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
         super(props);
 
         this.state = {
-            data: props.data
+            data: props.data,
+            onAgentTypeChanged: props.onAgentTypeChanged
+        }
+    }
+
+    private onAgentTypeSelectChanged = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        if (this.state.onAgentTypeChanged) {
+            this.state.onAgentTypeChanged(e.target.value);
         }
     }
 
     componentWillReceiveProps(nextProps: ITableOfContentsProps) {
         if (this.state.data !== nextProps.data) {
             this.setState({ data: nextProps.data });
+        }
+        if (this.state.onAgentTypeChanged !== nextProps.onAgentTypeChanged) {
+            this.setState({ onAgentTypeChanged: nextProps.onAgentTypeChanged });
         }
     }
 
@@ -39,6 +51,17 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
                             </li>
                         ))}
                     </ul>
+                    <hr />
+                    <div className='select'>
+                        <select onChange={this.onAgentTypeSelectChanged}>
+                            <option value='*'>Display all</option>
+                            <optgroup label='Data'>
+                                {this.state.data.map(atp => (
+                                    <option key={atp.Name} value={atp.Name}>{atp.Name}</option>
+                                ))}
+                            </optgroup>
+                        </select>
+                    </div>
                 </div>
             </section>
         )
