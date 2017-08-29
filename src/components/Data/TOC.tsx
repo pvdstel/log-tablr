@@ -31,7 +31,7 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
                 <div className='container'>
                     <h2 className='title is-2' id='toc'>
                         Table of contents
-                </h2>
+                    </h2>
                     <ul>
                         {this.state.data.map(atp => (
                             <li>

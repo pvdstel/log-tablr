@@ -32,7 +32,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                 <hr />
                 <section className='section'>
                     <div className='container'>
-                        <h2 className='title is-2 is-primary' id={this.state.profile.Name}>{this.state.profile.Name}</h2>
+                        <h2 className='title is-2' id={this.state.profile.Name}>{this.state.profile.Name}</h2>
                         <ModuleProfiles moduleProfiles={this.state.profile.ModuleProfiles} />
                     </div>
                 </section>
