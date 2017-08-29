@@ -34,7 +34,7 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
                     </h2>
                     <ul>
                         {this.state.data.map(atp => (
-                            <li>
+                            <li key={atp.Name}>
                                 <a href={`#${atp.Name}`}>{atp.Name}</a>
                             </li>
                         ))}
