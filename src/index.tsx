@@ -1,12 +1,23 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
+import Header from './components/header';
+
 document.body.dataset.appLoaded = '';
 
+require('bulma/bulma.sass');
+
 function App() {
-    console.log('test');
     return (
-        <p>Test</p>
+        <div>
+            <Header />
+            <hr />
+            <section className='section'>
+                <div className='container'>
+                    <p>Test</p>
+                </div>
+            </section>
+        </div>
     );
 }
 
