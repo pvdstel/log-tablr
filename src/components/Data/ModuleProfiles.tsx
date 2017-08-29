@@ -28,7 +28,6 @@ export default class ModuleProfiles extends React.Component<IModuleProfilesProps
     render() {
         return (
             <section>
-                <h3 className='title is-3 has-text-grey'>Module profiles</h3>
                 <table className='table is-striped is-fullwidth'>
                     <thead>
                         <tr>

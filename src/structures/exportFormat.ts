@@ -1,7 +1,7 @@
 export interface AgentTypeProfile {
     Name: string;
     ModuleProfiles: ModuleProfile[];
-    AgentProfile: AgentProfile[];
+    AgentProfiles: AgentProfile[];
     CycleProfile: CycleProfile;
 }
 
