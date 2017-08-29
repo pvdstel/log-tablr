@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom';
 
 import { ExportFormat } from './structures/exportFormat';
 import Header from './components/header';
+import DataRenderer from './components/Data/DataRenderer';
 
 document.body.dataset.appLoaded = '';
 
@@ -20,7 +21,7 @@ function App() {
             <hr />
             <section className='section'>
                 <div className='container'>
-                    <pre>{JSON.stringify(data, null, 2)}</pre>
+                    <DataRenderer data={data} />
                 </div>
             </section>
         </div>
