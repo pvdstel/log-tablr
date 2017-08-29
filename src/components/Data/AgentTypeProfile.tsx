@@ -89,7 +89,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                         </p>
                         {this.state.showAgentProfiles &&
                             <div className='select bottom-p-spacing'>
-                                <select onChange={this.onAgentNameSelectChanged}>
+                                <select value={this.state.agentName} onChange={this.onAgentNameSelectChanged}>
                                     <option value='*'>Display all</option>
                                     <optgroup label='Data'>
                                         {this.state.profile.AgentProfiles.map(atp => (
