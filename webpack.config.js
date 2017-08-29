@@ -43,6 +43,7 @@ module.exports = {
       {
         test: /\.tsx?/,
         use: [
+          'babel-loader',
           'awesome-typescript-loader'
         ]
       },
