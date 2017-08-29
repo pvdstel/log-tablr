@@ -1,7 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
+document.body.dataset.appLoaded = '';
+
 function App() {
+    console.log('test');
     return (
         <p>Test</p>
     );
