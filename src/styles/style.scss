@@ -1,3 +1,14 @@
+body {
+    min-height: calc(100vh + 216px);
+}
+
+.section {
+    &.is-condensed {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+}
+
 .title {
     &.is-1 {
         & + .subtitle {

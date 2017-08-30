@@ -6,6 +6,7 @@ import CycleProfile from './CycleProfile';
 
 export interface IModuleProfilesProps {
     agentProfile: AgentProfileDataType;
+    showCycleProfile?: boolean;
 }
 
 interface IModuleProfilesState {
@@ -19,7 +20,7 @@ export default class AgentProfile extends React.Component<IModuleProfilesProps, 
 
         this.state = {
             agentProfile: props.agentProfile,
-            showCycleProfile: false
+            showCycleProfile: props.showCycleProfile || false
         };
     }
 
@@ -32,11 +33,14 @@ export default class AgentProfile extends React.Component<IModuleProfilesProps, 
         if (this.state.agentProfile !== nextProps.agentProfile) {
             this.setState({ agentProfile: nextProps.agentProfile });
         }
+        if (this.state.showCycleProfile !== nextProps.showCycleProfile) {
+            this.setState({ showCycleProfile: nextProps.showCycleProfile });
+        }
     }
 
     render() {
         return (
-            <section>
+            <div>
                 <h4 className='title is-4 has-text-grey'>{this.state.agentProfile.Name}</h4>
 
                 <h5 className='title is-5 has-text-grey-light'>Module profiles</h5>
@@ -52,7 +56,7 @@ export default class AgentProfile extends React.Component<IModuleProfilesProps, 
                 {this.state.showCycleProfile &&
                     <CycleProfile cycleProfile={this.state.agentProfile.CycleProfile} />
                 }
-            </section>
+            </div>
         );
     }
 }

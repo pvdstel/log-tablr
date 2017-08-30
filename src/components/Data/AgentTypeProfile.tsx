@@ -132,9 +132,10 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
             return (
                 <div>
                     <hr />
-                    <section className='section'>
+                    <section className='section is-condensed'>
                         <div className='container'>
-                            <AgentProfile agentProfile={this.state.profile.AgentProfiles.find(ap => ap.Name === this.state.agentTypeInstanceFilter)} />
+                            <AgentProfile agentProfile={this.state.profile.AgentProfiles.find(ap => ap.Name === this.state.agentTypeInstanceFilter)}
+                                showCycleProfile={true} />
                         </div>
                     </section>
                 </div>
