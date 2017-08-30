@@ -21,5 +21,35 @@ export interface AgentProfile {
 }
 
 export interface CycleProfile {
-    [key: string]: string | number;
+    Count: number;
+    TotalTime: number;
+    AverageTime: number;
+    LowestTime: number;
+    HighestTime: number;
+    TotalActions: number;
+    AverageActions: number;
+    LowestActions: number;
+    HighestActions: number;
+    TotalBeliefs: number;
+    AverageBeliefs: number;
+    LowestBeliefs: number;
+    HighestBeliefs: number;
+    TotalQueries: number;
+    HighestQueries: number;
+    TotalPercepts: number;
+    AveragePercepts: number;
+    LowestPercepts: number;
+    HighestPercepts: number;
+    TotalGoals: number;
+    AverageGoals: number;
+    LowestGoals: number;
+    HighestGoals: number;
+    TotalMessagesReceived: number;
+    AverageMessagesReceived: number;
+    LowestMessagesReceived: number;
+    HighestMessagesReceived: number;
+    TotalMessagesSent: number;
+    AverageMessagesSent: number;
+    LowestMessagesSent: number;
+    HighestMessagesSent: number;
 }
