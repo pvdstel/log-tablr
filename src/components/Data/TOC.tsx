@@ -35,6 +35,10 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
         if (this.state.onAgentTypeChanged) {
             this.state.onAgentTypeChanged(e.target.value);
         }
+        this.setState({ agentTypeInstance: SELECT_EMPTY_VALUE });
+        if (this.state.onAgentTypeInstanceChanged) {
+            this.state.onAgentTypeInstanceChanged(SELECT_EMPTY_VALUE);
+        }
     }
 
     private onAgentTypeInstanceSelectChanged = (e: React.ChangeEvent<HTMLSelectElement>) => {

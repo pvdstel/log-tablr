@@ -7,11 +7,13 @@ import AgentTypeProfileComponent from './AgentTypeProfile';
 export interface IDataRendererProps {
     data: AgentTypeProfile[];
     agentTypeFilter?: string;
+    agentTypeInstanceFilter?: string;
 }
 
 interface IDataRendererState {
     data: AgentTypeProfile[];
     agentTypeFilter: string;
+    agentTypeInstanceFilter: string;
 }
 
 export default class DataRenderer extends React.Component<IDataRendererProps, IDataRendererState> {
@@ -20,13 +22,14 @@ export default class DataRenderer extends React.Component<IDataRendererProps, ID
 
         this.state = {
             data: props.data,
-            agentTypeFilter: props.agentTypeFilter || SELECT_EMPTY_VALUE
+            agentTypeFilter: props.agentTypeFilter || SELECT_EMPTY_VALUE,
+            agentTypeInstanceFilter: props.agentTypeInstanceFilter || SELECT_EMPTY_VALUE
         }
     }
 
     private agentTypeFilterPredicate = (atp: AgentTypeProfile) => {
         return this.state.agentTypeFilter === SELECT_EMPTY_VALUE || this.state.agentTypeFilter === atp.Name;
-    } 
+    }
 
     componentWillReceiveProps(nextProps: IDataRendererProps) {
         if (this.state.data !== nextProps.data) {
@@ -35,12 +38,22 @@ export default class DataRenderer extends React.Component<IDataRendererProps, ID
         if (this.state.agentTypeFilter !== nextProps.agentTypeFilter) {
             this.setState({ agentTypeFilter: nextProps.agentTypeFilter || SELECT_EMPTY_VALUE });
         }
+        if (this.state.agentTypeInstanceFilter !== nextProps.agentTypeInstanceFilter) {
+            this.setState({ agentTypeInstanceFilter: nextProps.agentTypeInstanceFilter });
+        }
     }
 
     render() {
-        return (<div>
-            {this.state.data.filter(this.agentTypeFilterPredicate).map(atp => <AgentTypeProfileComponent key={atp.Name} profile={atp} />)}
-        </div>
+        return (
+            <div>
+                {
+                    this.state.data.filter(this.agentTypeFilterPredicate).map(atp =>
+                        <AgentTypeProfileComponent key={atp.Name}
+                            profile={atp}
+                            agentTypeInstanceFilter={this.state.agentTypeInstanceFilter} />
+                    )
+                }
+            </div>
         )
     }
 }

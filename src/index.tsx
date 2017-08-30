@@ -42,8 +42,12 @@ export default class App extends React.Component<undefined, IAppState> {
             <div>
                 <Header />
                 <hr />
-                <TOC data={this.state.data} onAgentTypeChanged={t => this.setState({ agentType: t })} />
-                <DataRenderer data={this.state.data} agentTypeFilter={this.state.agentType} />
+                <TOC data={this.state.data}
+                    onAgentTypeChanged={t => this.setState({ agentType: t })}
+                    onAgentTypeInstanceChanged={t => this.setState({ agentTypeInstance: t })} />
+                <DataRenderer data={this.state.data}
+                    agentTypeFilter={this.state.agentType}
+                    agentTypeInstanceFilter={this.state.agentTypeInstance} />
             </div>
         );
     }
