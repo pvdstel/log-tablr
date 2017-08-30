@@ -41,9 +41,12 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
     }
 
     render() {
+        let agentTypeSelected = this.state.agentType !== '*';
         return (
             <section className='section'>
                 <div className='container'>
+
+                    {/* Agent type selector */}
                     <div className='select'>
                         <select value={this.state.agentType} onChange={this.onAgentTypeSelectChanged}>
                             <option value='*'>Display all</option>
@@ -54,13 +57,15 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
                             </optgroup>
                         </select>
                     </div>
-                    {this.state.agentType === '*' && <hr />}
-                    {this.state.agentType === '*' &&
+
+                    {/* TOC components */}
+                    {!agentTypeSelected && <hr />}
+                    {!agentTypeSelected &&
                         <h2 className='title is-2' id='toc'>
                             Table of contents
                         </h2>
                     }
-                    {this.state.agentType === '*' &&
+                    {!agentTypeSelected &&
                         <ul>
                             {this.state.data.map(atp => (
                                 <li key={atp.Name}>
