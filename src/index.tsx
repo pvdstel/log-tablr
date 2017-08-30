@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
+import { SELECT_EMPTY_VALUE } from 'src/constants';
 import { AgentTypeProfile } from './structures/exportFormat';
 import Header from './components/header';
 import TOC from './components/Data/TOC';
@@ -15,6 +16,7 @@ require('./styles/style.scss');
 interface IAppState {
     data: AgentTypeProfile[];
     agentType: string;
+    agentTypeInstance: string;
 }
 
 export default class App extends React.Component<undefined, IAppState> {
@@ -23,7 +25,8 @@ export default class App extends React.Component<undefined, IAppState> {
 
         this.state = {
             data: [],
-            agentType: '*'
+            agentType: SELECT_EMPTY_VALUE,
+            agentTypeInstance: SELECT_EMPTY_VALUE
         }
     }
 

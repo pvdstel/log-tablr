@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import { SELECT_EMPTY_VALUE } from 'src/constants';
 import { AgentTypeProfile as AgentTypeProfileDataType } from 'src/structures/exportFormat';
 import ModuleProfiles from './ModuleProfiles';
 import AgentProfile from './AgentProfile';
@@ -23,7 +24,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
 
         this.state = {
             profile: props.profile,
-            agentName: '*',
+            agentName: SELECT_EMPTY_VALUE,
             showModuleProfiles: false,
             showAgentProfiles: false,
             showCycleProfile: false
@@ -40,7 +41,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
     }
 
     private agentNameFilterPredicate = (atp: AgentTypeProfileDataType) => {
-        return this.state.agentName === '*' || this.state.agentName === atp.Name;
+        return this.state.agentName === SELECT_EMPTY_VALUE || this.state.agentName === atp.Name;
     }
 
     private onToggleAgentProfilesClicked = (e: React.SyntheticEvent<HTMLAnchorElement>) => {
@@ -90,7 +91,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                         {this.state.showAgentProfiles &&
                             <div className='select bottom-p-spacing'>
                                 <select value={this.state.agentName} onChange={this.onAgentNameSelectChanged}>
-                                    <option value='*'>Display all</option>
+                                    <option value={SELECT_EMPTY_VALUE}>Display all</option>
                                     <optgroup label='Data'>
                                         {this.state.profile.AgentProfiles.map(atp => (
                                             <option key={atp.Name} value={atp.Name}>{atp.Name}</option>
