@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { SELECT_EMPTY_VALUE } from 'src/constants';
 import { AgentTypeProfile } from 'src/structures/exportFormat';
-import AgentTypeProfileComponent from './AgentTypeProfile';
+import AgentTypeProfileComponent from './Data/AgentTypeProfile';
 
 export interface IDataRendererProps {
     data: AgentTypeProfile[];

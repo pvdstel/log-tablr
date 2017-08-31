@@ -4,8 +4,8 @@ import * as ReactDOM from 'react-dom';
 import { SELECT_EMPTY_VALUE } from 'src/constants';
 import { AgentTypeProfile } from './structures/exportFormat';
 import Header from './components/header';
-import TOC from './components/Data/TOC';
-import DataRenderer from './components/Data/DataRenderer';
+import TOC from './components/TOC';
+import DataRenderer from './components/DataRenderer';
 
 document.body.dataset.appLoaded = '';
 
