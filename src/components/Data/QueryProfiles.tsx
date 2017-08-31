@@ -1,27 +1,27 @@
 import * as React from 'react';
 
-import { QueryProfile as QueryProfileDataType } from 'src/structures/exportFormat';
+import { QueryProfile } from 'src/structures/exportFormat';
 
-export interface IQueryProfileProps {
-    queryProfile: QueryProfileDataType;
+export interface IQueryProfilesProps {
+    queryProfiles: QueryProfile[];
 }
 
-interface IQueryProfileState {
-    queryProfile: QueryProfileDataType;
+interface IQueryProfilesState {
+    queryProfiles: QueryProfile[];
 }
 
-export default class QueryProfile extends React.Component<IQueryProfileProps, IQueryProfileState> {
-    constructor(props: IQueryProfileProps) {
+export default class QueryProfiles extends React.Component<IQueryProfilesProps, IQueryProfilesState> {
+    constructor(props: IQueryProfilesProps) {
         super(props);
 
         this.state = {
-            queryProfile: props.queryProfile
+            queryProfiles: props.queryProfiles
         };
     }
 
-    componentWillReceiveProps(nextProps: IQueryProfileProps) {
-        if (this.state.queryProfile !== nextProps.queryProfile) {
-            this.setState({ queryProfile: nextProps.queryProfile });
+    componentWillReceiveProps(nextProps: IQueryProfilesProps) {
+        if (this.state.queryProfiles !== nextProps.queryProfiles) {
+            this.setState({ queryProfiles: nextProps.queryProfiles });
         }
     }
 

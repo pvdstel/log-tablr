@@ -3,6 +3,7 @@ import * as React from 'react';
 import { AgentProfile as AgentProfileDataType } from 'src/structures/exportFormat';
 import ModuleProfiles from './ModuleProfiles';
 import CycleProfile from './CycleProfile';
+import QueryProfiles from './QueryProfiles';
 
 export interface IModuleProfilesProps {
     agentProfile: AgentProfileDataType;
@@ -56,6 +57,9 @@ export default class AgentProfile extends React.Component<IModuleProfilesProps, 
                 {this.state.showCycleProfile &&
                     <CycleProfile cycleProfile={this.state.agentProfile.CycleProfile} />
                 }
+
+                <h3 className='title is-5'>Query profiles</h3>
+                <QueryProfiles queryProfiles={this.state.agentProfile.QueryProfiles} />
             </div>
         );
     }

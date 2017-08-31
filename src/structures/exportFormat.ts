@@ -3,6 +3,7 @@ export interface AgentTypeProfile {
     ModuleProfiles: ModuleProfile[];
     AgentProfiles: AgentProfile[];
     CycleProfile: CycleProfile;
+    QueryProfiles: QueryProfile[];
 }
 
 export interface ModuleProfile {
@@ -18,6 +19,7 @@ export interface AgentProfile {
     Name: string;
     ModuleProfiles: ModuleProfile[];
     CycleProfile: CycleProfile;
+    QueryProfiles: QueryProfile[];
 }
 
 export interface CycleProfile {
