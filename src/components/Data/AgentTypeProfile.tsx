@@ -79,8 +79,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                             <h3 className='title is-3 has-text-grey'>Module profiles</h3>
                             <p className='bottom-p-spacing'>
                                 <a onClick={this.onToggleModuleProfilesClicked}
-                                    href='#'
-                                    className='button is-primary is-outlined'>
+                                    href='#'>
                                     Show/hide module profiles
                              </a>
                             </p>
@@ -91,8 +90,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                             <h3 className='title is-3 has-text-grey'>Agent profiles</h3>
                             <p className='bottom-p-spacing'>
                                 <a onClick={this.onToggleAgentProfilesClicked}
-                                    href='#'
-                                    className='button is-primary is-outlined'>
+                                    href='#'>
                                     Show/hide agent profiles
                              </a>
                             </p>
@@ -115,8 +113,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                             <h3 className='title is-3 has-text-grey'>Cycle profile</h3>
                             <p className='bottom-p-spacing'>
                                 <a onClick={this.onToggleCycleProfileClicked}
-                                    href='#'
-                                    className='button is-primary is-outlined'>
+                                    href='#'>
                                     Show/hide cycle profile
                              </a>
                             </p>
