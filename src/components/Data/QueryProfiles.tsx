@@ -31,15 +31,25 @@ export default class QueryProfiles extends React.Component<IQueryProfilesProps, 
                 <table className='table is-striped is-fullwidth'>
                     <thead>
                         <tr>
-                            <th/>
-                            <th>Total</th>
-                            <th>Average</th>
-                            <th>Lowest</th>
-                            <th>Highest</th>
+                            <th>Query</th>
+                            <th>Hits</th>
+                            <th>Misses</th>
+                            <th>Times</th>
+                            <th>Total time</th>
+                            <th>Average time</th>
                         </tr>
                     </thead>
                     <tbody>
-                        
+                        {this.state.queryProfiles.map((q, i) => (
+                            <tr key={i}>
+                                <td><code>{q.Query}</code></td>
+                                <td>{q.Hits}</td>
+                                <td>{q.Misses}</td>
+                                <td>{q.Times}</td>
+                                <td>{q.TotalTime}</td>
+                                <td>{q.AverageTime}</td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
             </section>
