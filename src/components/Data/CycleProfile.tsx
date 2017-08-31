@@ -2,16 +2,16 @@ import * as React from 'react';
 
 import { CycleProfile as CycleProfileDataType } from 'src/structures/exportFormat';
 
-export interface IModuleProfilesProps {
+export interface ICycleProfileProps {
     cycleProfile: CycleProfileDataType;
 }
 
-interface IModuleProfilesState {
+interface ICycleProfileState {
     cycleProfile: CycleProfileDataType;
 }
 
-export default class CycleProfile extends React.Component<IModuleProfilesProps, IModuleProfilesState> {
-    constructor(props: IModuleProfilesProps) {
+export default class CycleProfile extends React.Component<ICycleProfileProps, ICycleProfileState> {
+    constructor(props: ICycleProfileProps) {
         super(props);
 
         this.state = {
@@ -19,7 +19,7 @@ export default class CycleProfile extends React.Component<IModuleProfilesProps, 
         };
     }
 
-    componentWillReceiveProps(nextProps: IModuleProfilesProps) {
+    componentWillReceiveProps(nextProps: ICycleProfileProps) {
         if (this.state.cycleProfile !== nextProps.cycleProfile) {
             this.setState({ cycleProfile: nextProps.cycleProfile });
         }
