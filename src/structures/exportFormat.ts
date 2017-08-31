@@ -35,6 +35,8 @@ export interface CycleProfile {
     LowestBeliefs: number;
     HighestBeliefs: number;
     TotalQueries: number;
+    AverageQueries: number;
+    LowestQueries: number;
     HighestQueries: number;
     TotalPercepts: number;
     AveragePercepts: number;

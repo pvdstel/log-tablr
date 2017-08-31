@@ -67,8 +67,8 @@ export default class CycleProfile extends React.Component<IModuleProfilesProps, 
                         <tr>
                             <th>Queries</th>
                             <td>{this.state.cycleProfile.TotalQueries}</td>
-                            <td></td>
-                            <td></td>
+                            <td>{this.state.cycleProfile.AverageQueries}</td>
+                            <td>{this.state.cycleProfile.LowestQueries}</td>
                             <td>{this.state.cycleProfile.HighestQueries}</td>
                         </tr>
                         <tr>
