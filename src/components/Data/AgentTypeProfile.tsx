@@ -14,7 +14,6 @@ export interface IAgentTypeProfileProps {
 interface IAgentTypeProfileState {
     profile: AgentTypeProfileDataType;
     showModuleProfiles: boolean;
-    agentName: string;
     showAgentProfiles: boolean;
     showCycleProfile: boolean;
     agentTypeInstanceFilter: string;
@@ -26,7 +25,6 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
 
         this.state = {
             profile: props.profile,
-            agentName: SELECT_EMPTY_VALUE,
             showModuleProfiles: false,
             showAgentProfiles: false,
             showCycleProfile: false,
@@ -37,19 +35,6 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
     private onToggleModuleProfilesClicked = (e: React.SyntheticEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         this.setState({ showModuleProfiles: !this.state.showModuleProfiles });
-    }
-
-    private onAgentNameSelectChanged = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        this.setState({ agentName: e.target.value });
-    }
-
-    private agentNameFilterPredicate = (atp: AgentTypeProfileDataType) => {
-        return this.state.agentName === SELECT_EMPTY_VALUE || this.state.agentName === atp.Name;
-    }
-
-    private onToggleAgentProfilesClicked = (e: React.SyntheticEvent<HTMLAnchorElement>) => {
-        e.preventDefault();
-        this.setState({ showAgentProfiles: !this.state.showAgentProfiles });
     }
 
     private onToggleCycleProfileClicked = (e: React.SyntheticEvent<HTMLAnchorElement>) => {
@@ -72,11 +57,11 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
             return (
                 <div>
                     <hr />
-                    <section className='section'>
+                    <section className='section is-condensed'>
                         <div className='container'>
-                            <h2 className='title is-2' id={this.state.profile.Name}>{this.state.profile.Name}</h2>
+                            <h2 className='title is-4' id={this.state.profile.Name}>{this.state.profile.Name}</h2>
 
-                            <h3 className='title is-3 has-text-grey'>Module profiles</h3>
+                            <h3 className='title is-5 has-text-grey'>Module profiles</h3>
                             <p className='bottom-p-spacing'>
                                 <a onClick={this.onToggleModuleProfilesClicked}
                                     href='#'>
@@ -87,30 +72,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                                 <ModuleProfiles moduleProfiles={this.state.profile.ModuleProfiles} />
                             }
 
-                            <h3 className='title is-3 has-text-grey'>Agent profiles</h3>
-                            <p className='bottom-p-spacing'>
-                                <a onClick={this.onToggleAgentProfilesClicked}
-                                    href='#'>
-                                    Show/hide agent profiles
-                             </a>
-                            </p>
-                            {this.state.showAgentProfiles &&
-                                <div className='select bottom-p-spacing'>
-                                    <select value={this.state.agentName} onChange={this.onAgentNameSelectChanged}>
-                                        <option value={SELECT_EMPTY_VALUE}>Display all</option>
-                                        <optgroup label='Data'>
-                                            {this.state.profile.AgentProfiles.map(atp => (
-                                                <option key={atp.Name} value={atp.Name}>{atp.Name}</option>
-                                            ))}
-                                        </optgroup>
-                                    </select>
-                                </div>
-                            }
-                            {this.state.showAgentProfiles &&
-                                this.state.profile.AgentProfiles.filter(this.agentNameFilterPredicate).map(ap => <AgentProfile key={ap.Name} agentProfile={ap} />)
-                            }
-
-                            <h3 className='title is-3 has-text-grey'>Cycle profile</h3>
+                            <h3 className='title is-5 has-text-grey'>Cycle profile</h3>
                             <p className='bottom-p-spacing'>
                                 <a onClick={this.onToggleCycleProfileClicked}
                                     href='#'>

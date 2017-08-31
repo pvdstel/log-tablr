@@ -68,7 +68,7 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
     render() {
         let agentTypeSelected = this.state.agentType !== SELECT_EMPTY_VALUE;
         return (
-            <section className={`section ${agentTypeSelected ? 'is-condensed' : ''}`}>
+            <section className='section is-condensed'>
                 <div className='container'>
                     <div className='toolbar'>
                         {/* Agent type selector */}
