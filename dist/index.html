@@ -13,17 +13,7 @@
 
     <script type="application/json" id="data-container">[]</script>
     
-    <script src="./bundle.js"></script>
-    <script>
-        (function() {
-            if (document.body.dataset.appLoaded === undefined) {
-                // We're probably in dev mode
-                let s = document.createElement('script');
-                s.src = '/assets/bundle.js';
-                document.body.appendChild(s);
-            }
-        })();
-    </script>
+    <script src="bundle.js"></script>
 </body>
 
 </html>
