@@ -44,7 +44,11 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                     <hr />
                     <section className='section is-condensed'>
                         <div className='container'>
-                            <h2 className='title is-4' id={this.state.profile.Name}>{this.state.profile.Name}</h2>
+                            <h2 className='title is-4' id={this.state.profile.Name}>
+                                {this.state.profile.Name}
+                                {' '}
+                                <small className='has-text-grey-light'>(type; cumulative values)</small>
+                            </h2>
 
                             <h3 className='title is-5'>Module profiles</h3>
                             <ModuleProfiles moduleProfiles={this.state.profile.ModuleProfiles} />

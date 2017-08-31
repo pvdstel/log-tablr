@@ -31,7 +31,11 @@ export default class AgentProfile extends React.Component<IModuleProfilesProps, 
     render() {
         return (
             <div>
-                <h2 className='title is-4'>{this.state.agentProfile.Name}</h2>
+                <h2 className='title is-4'>
+                    {this.state.agentProfile.Name}
+                    {' '}
+                    <small className='has-text-grey-light'>(instance; single values)</small>
+                </h2>
 
                 <h3 className='title is-5'>Module profiles</h3>
                 <ModuleProfiles moduleProfiles={this.state.agentProfile.ModuleProfiles} />
