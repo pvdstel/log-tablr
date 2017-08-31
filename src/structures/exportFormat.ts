@@ -55,3 +55,12 @@ export interface CycleProfile {
     LowestMessagesSent: number;
     HighestMessagesSent: number;
 }
+
+export interface QueryProfile {
+    Query: string;
+    Hits: number;
+    Misses: number;
+    Times: number;
+    TotalTime: number;
+    AverageTime: number;
+}
