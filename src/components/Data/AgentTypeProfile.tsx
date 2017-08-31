@@ -30,7 +30,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
             showModuleProfiles: false,
             showAgentProfiles: false,
             showCycleProfile: false,
-            agentTypeInstanceFilter: SELECT_EMPTY_VALUE
+            agentTypeInstanceFilter: props.agentTypeInstanceFilter || SELECT_EMPTY_VALUE
         }
     }
 
