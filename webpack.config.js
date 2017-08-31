@@ -1,7 +1,8 @@
 var path = require('path');
 
 const cssLoaderConfig = {
-  sourceMap: true
+  sourceMap: false,
+  minimize: true
 };
 
 module.exports = {
