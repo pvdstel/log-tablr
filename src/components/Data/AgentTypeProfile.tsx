@@ -14,7 +14,6 @@ export interface IAgentTypeProfileProps {
 interface IAgentTypeProfileState {
     profile: AgentTypeProfileDataType;
     showModuleProfiles: boolean;
-    showAgentProfiles: boolean;
     showCycleProfile: boolean;
     agentTypeInstanceFilter: string;
 }
@@ -25,9 +24,8 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
 
         this.state = {
             profile: props.profile,
-            showModuleProfiles: false,
-            showAgentProfiles: false,
-            showCycleProfile: false,
+            showModuleProfiles: true,
+            showCycleProfile: true,
             agentTypeInstanceFilter: props.agentTypeInstanceFilter || SELECT_EMPTY_VALUE
         }
     }
