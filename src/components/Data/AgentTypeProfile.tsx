@@ -61,7 +61,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                         <div className='container'>
                             <h2 className='title is-4' id={this.state.profile.Name}>{this.state.profile.Name}</h2>
 
-                            <h3 className='title is-5 has-text-grey'>Module profiles</h3>
+                            <h3 className='title is-5'>Module profiles</h3>
                             <p className='bottom-p-spacing'>
                                 <a onClick={this.onToggleModuleProfilesClicked}
                                     href='#'>
@@ -72,7 +72,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                                 <ModuleProfiles moduleProfiles={this.state.profile.ModuleProfiles} />
                             }
 
-                            <h3 className='title is-5 has-text-grey'>Cycle profile</h3>
+                            <h3 className='title is-5'>Cycle profile</h3>
                             <p className='bottom-p-spacing'>
                                 <a onClick={this.onToggleCycleProfileClicked}
                                     href='#'>

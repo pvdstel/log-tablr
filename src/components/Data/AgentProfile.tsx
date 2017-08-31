@@ -41,12 +41,12 @@ export default class AgentProfile extends React.Component<IModuleProfilesProps, 
     render() {
         return (
             <div>
-                <h2 className='title is-4 has-text-grey'>{this.state.agentProfile.Name}</h2>
+                <h2 className='title is-4'>{this.state.agentProfile.Name}</h2>
 
-                <h3 className='title is-5 has-text-grey-light'>Module profiles</h3>
+                <h3 className='title is-5'>Module profiles</h3>
                 <ModuleProfiles moduleProfiles={this.state.agentProfile.ModuleProfiles} />
 
-                <h3 className='title is-5 has-text-grey-light'>Cycle profile</h3>
+                <h3 className='title is-5'>Cycle profile</h3>
                 <p className='bottom-p-spacing'>
                     <a onClick={this.onToggleCycleProfileClicked}
                         href='#'>
