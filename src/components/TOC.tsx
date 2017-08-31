@@ -36,18 +36,11 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
         if (this.state.onAgentTypeChanged) {
             this.state.onAgentTypeChanged(e.target.value);
         }
-        // Check if it has one agent, if so, select it
-        let newAgentTypeInstance = SELECT_EMPTY_VALUE;
-        if (e.target.value !== SELECT_EMPTY_VALUE) {
-            let selectedAgentProfiles = this.state.data.find(atp => atp.Name === e.target.value).AgentProfiles;
-            if (selectedAgentProfiles.length === 1) {
-                newAgentTypeInstance = selectedAgentProfiles[0].Name;
-            }
-        }
+
         // Set the new agent type instance
-        this.setState({ agentTypeInstance: newAgentTypeInstance });
+        this.setState({ agentTypeInstance: SELECT_EMPTY_VALUE });
         if (this.state.onAgentTypeInstanceChanged) {
-            this.state.onAgentTypeInstanceChanged(newAgentTypeInstance);
+            this.state.onAgentTypeInstanceChanged(SELECT_EMPTY_VALUE);
         }
     }
 
