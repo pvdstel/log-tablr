@@ -15,13 +15,13 @@ export default class ModuleProfiles extends React.Component<IModuleProfilesProps
         super(props);
 
         this.state = {
-            moduleProfiles: props.moduleProfiles
+            moduleProfiles: props.moduleProfiles || []
         };
     }
 
     componentWillReceiveProps(nextProps: IModuleProfilesProps) {
         if (this.state.moduleProfiles !== nextProps.moduleProfiles) {
-            this.setState({ moduleProfiles: nextProps.moduleProfiles });
+            this.setState({ moduleProfiles: nextProps.moduleProfiles || [] });
         }
     }
 

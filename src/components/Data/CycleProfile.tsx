@@ -15,13 +15,13 @@ export default class CycleProfile extends React.Component<ICycleProfileProps, IC
         super(props);
 
         this.state = {
-            cycleProfile: props.cycleProfile
+            cycleProfile: props.cycleProfile || ({} as CycleProfileDataType)
         };
     }
 
     componentWillReceiveProps(nextProps: ICycleProfileProps) {
         if (this.state.cycleProfile !== nextProps.cycleProfile) {
-            this.setState({ cycleProfile: nextProps.cycleProfile });
+            this.setState({ cycleProfile: nextProps.cycleProfile || ({} as CycleProfileDataType) });
         }
     }
 

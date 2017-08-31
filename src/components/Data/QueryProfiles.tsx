@@ -15,13 +15,13 @@ export default class QueryProfiles extends React.Component<IQueryProfilesProps, 
         super(props);
 
         this.state = {
-            queryProfiles: props.queryProfiles
+            queryProfiles: props.queryProfiles || []
         };
     }
 
     componentWillReceiveProps(nextProps: IQueryProfilesProps) {
         if (this.state.queryProfiles !== nextProps.queryProfiles) {
-            this.setState({ queryProfiles: nextProps.queryProfiles });
+            this.setState({ queryProfiles: nextProps.queryProfiles || [] });
         }
     }
 
