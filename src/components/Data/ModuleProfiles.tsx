@@ -32,11 +32,11 @@ export default class ModuleProfiles extends React.Component<IModuleProfilesProps
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Executions</th>
-                            <th>Total execution time</th>
-                            <th>Shortest execution time</th>
-                            <th>Longest execution time</th>
-                            <th>Average execution time</th>
+                            <th onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.Executions - b.Executions) })}>Executions</th>
+                            <th onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.TotalExecutionTime - b.TotalExecutionTime) })}>Total execution time</th>
+                            <th onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.ShortestExecutionTime - b.ShortestExecutionTime) })}>Shortest execution time</th>
+                            <th onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.LongestExecutionTime - b.LongestExecutionTime) })}>Longest execution time</th>
+                            <th onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.AverageExecutionTime - b.AverageExecutionTime) })}>Average execution time</th>
                         </tr>
                     </thead>
                     <tbody>
