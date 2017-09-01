@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { SELECT_EMPTY_VALUE } from 'src/constants';
+import { SELECT_EMPTY_VALUE, SELECT_ALL_VALUE } from 'src/constants';
 import { AgentTypeProfile as AgentTypeProfileDataType } from 'src/structures/exportFormat';
 import ModuleProfiles from './ModuleProfiles';
 import AgentProfile from './AgentProfile';
@@ -37,14 +37,13 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
     }
 
     render() {
-        let agentTypeInstanceSelected = this.state.agentTypeInstanceFilter !== SELECT_EMPTY_VALUE;
-        if (!agentTypeInstanceSelected) {
+        if (this.state.agentTypeInstanceFilter === SELECT_EMPTY_VALUE) {
             return (
                 <div>
                     <hr />
                     <section className='section is-condensed'>
                         <div className='container'>
-                            <h2 className='title is-4' id={this.state.profile.Name}>
+                            <h2 className='title is-4' id={`type-${this.state.profile.Name}`}>
                                 {this.state.profile.Name}
                                 {' '}
                                 <small className='has-text-grey-light'>(type; cumulative values)</small>
@@ -58,6 +57,18 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
 
                             <h3 className='title is-5'>Query profiles</h3>
                             <QueryProfiles queryProfiles={this.state.profile.QueryProfiles} />
+                        </div>
+                    </section>
+                </div>
+            )
+        }
+        else if (this.state.agentTypeInstanceFilter === SELECT_ALL_VALUE) {
+            return (
+                <div>
+                    <hr />
+                    <section className='section is-condensed'>
+                        <div className='container'>
+                            {this.state.profile.AgentProfiles.map(ap => <AgentProfile agentProfile={ap} />)}
                         </div>
                     </section>
                 </div>

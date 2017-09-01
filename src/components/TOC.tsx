@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { SELECT_EMPTY_VALUE } from 'src/constants';
+import { SELECT_EMPTY_VALUE, SELECT_ALL_VALUE } from 'src/constants';
 import { AgentTypeProfile } from 'src/structures/exportFormat';
 
 export interface ITableOfContentsProps {
@@ -61,7 +61,11 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
     }
 
     render() {
-        let agentTypeSelected = this.state.agentType !== SELECT_EMPTY_VALUE;
+        let agentTypeSelected = this.state.agentType !== SELECT_EMPTY_VALUE && this.state.agentType !== SELECT_ALL_VALUE;
+        let showAgentTypeToc = this.state.agentType === SELECT_ALL_VALUE;
+        let showAgentTypeInstanceToc = this.state.agentTypeInstance === SELECT_ALL_VALUE;
+        let showToc = showAgentTypeToc || showAgentTypeInstanceToc;
+
         return (
             <section className='section is-condensed'>
                 <div className='container'>
@@ -70,6 +74,7 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
                         <div className='select'>
                             <select value={this.state.agentType} onChange={this.onAgentTypeSelectChanged}>
                                 <option value={SELECT_EMPTY_VALUE}>Agent type</option>
+                                <option value={SELECT_ALL_VALUE}>Display all</option>
                                 <optgroup label='Data'>
                                     {this.state.data.map(atp => (
                                         <option key={atp.Name} value={atp.Name}>{atp.Name}</option>
@@ -82,6 +87,7 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
                             <div className='select'>
                                 <select value={this.state.agentTypeInstance} onChange={this.onAgentTypeInstanceSelectChanged}>
                                     <option value={SELECT_EMPTY_VALUE}>Agent type instance</option>
+                                    <option value={SELECT_ALL_VALUE}>Display all</option>
                                     <optgroup label='Data'>
                                         {this.state.data.find(atp => atp.Name === this.state.agentType).AgentProfiles.map(ap => (
                                             <option key={ap.Name} value={ap.Name}>{ap.Name}</option>
@@ -93,17 +99,26 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
                     </div>
 
                     {/* TOC components */}
-                    {!agentTypeSelected && <hr />}
-                    {!agentTypeSelected &&
+                    {showToc && <hr />}
+                    {showToc &&
                         <h2 className='title is-2' id='toc'>
                             Table of contents
                         </h2>
                     }
-                    {!agentTypeSelected &&
+                    {showAgentTypeToc &&
                         <ul>
                             {this.state.data.map(atp => (
                                 <li key={atp.Name}>
-                                    <a href={`#${atp.Name}`}>{atp.Name}</a>
+                                    <a href={`#type-${atp.Name}`}>{atp.Name}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    }
+                    {showAgentTypeInstanceToc &&
+                        <ul>
+                            {this.state.data.find(atp => atp.Name === this.state.agentType).AgentProfiles.map(ap => (
+                                <li key={ap.Name}>
+                                    <a href={`#instance-${ap.Name}`}>{ap.Name}</a>
                                 </li>
                             ))}
                         </ul>

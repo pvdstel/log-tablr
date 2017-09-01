@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { SELECT_EMPTY_VALUE } from 'src/constants';
+import { SELECT_EMPTY_VALUE, SELECT_ALL_VALUE } from 'src/constants';
 import { AgentTypeProfile } from 'src/structures/exportFormat';
 import AgentTypeProfileComponent from './Data/AgentTypeProfile';
 
@@ -28,7 +28,7 @@ export default class DataRenderer extends React.Component<IDataRendererProps, ID
     }
 
     private agentTypeFilterPredicate = (atp: AgentTypeProfile) => {
-        return this.state.agentTypeFilter === SELECT_EMPTY_VALUE || this.state.agentTypeFilter === atp.Name;
+        return this.state.agentTypeFilter === SELECT_ALL_VALUE || this.state.agentTypeFilter === atp.Name;
     }
 
     componentWillReceiveProps(nextProps: IDataRendererProps) {

@@ -31,7 +31,7 @@ export default class AgentProfile extends React.Component<IModuleProfilesProps, 
     render() {
         return (
             <div>
-                <h2 className='title is-4'>
+                <h2 className='title is-4' id={`instance-${this.state.agentProfile.Name}`}>
                     {this.state.agentProfile.Name}
                     {' '}
                     <small className='has-text-grey-light'>(instance; single values)</small>
