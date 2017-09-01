@@ -9,6 +9,10 @@ body {
     }
 }
 
+.toc-items {
+    columns: 2;
+}
+
 .title {
     &.is-1 {
         & + .subtitle {

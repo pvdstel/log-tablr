@@ -106,7 +106,7 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
                         </h2>
                     }
                     {showAgentTypeToc &&
-                        <ul>
+                        <ul className='toc-items'>
                             {this.state.data.map(atp => (
                                 <li key={atp.Name}>
                                     <a href={`#type-${atp.Name}`}>{atp.Name}</a>
@@ -115,7 +115,7 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
                         </ul>
                     }
                     {showAgentTypeInstanceToc &&
-                        <ul>
+                        <ul className='toc-items'>
                             {this.state.data.find(atp => atp.Name === this.state.agentType).AgentProfiles.map(ap => (
                                 <li key={ap.Name}>
                                     <a href={`#instance-${ap.Name}`}>{ap.Name}</a>
