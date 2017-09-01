@@ -100,6 +100,15 @@ export default class CycleProfile extends React.Component<ICycleProfileProps, IC
                             <td>{this.state.cycleProfile.HighestMessagesSent}</td>
                         </tr>
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <th />
+                            <th>Total</th>
+                            <th>Average</th>
+                            <th>Lowest</th>
+                            <th>Highest</th>
+                        </tr>
+                    </tfoot>
                 </table>
             </section>
         );

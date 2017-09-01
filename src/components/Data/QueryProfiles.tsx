@@ -51,6 +51,16 @@ export default class QueryProfiles extends React.Component<IQueryProfilesProps, 
                             </tr>
                         ))}
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Query</th>
+                            <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Hits - b.Hits) })}>Hits</th>
+                            <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Misses - b.Misses) })}>Misses</th>
+                            <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Times - b.Times) })}>Times</th>
+                            <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.TotalTime - b.TotalTime) })}>Total time</th>
+                            <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.AverageTime - b.AverageTime) })}>Average time</th>
+                        </tr>
+                    </tfoot>
                 </table>
             </section>
         );
