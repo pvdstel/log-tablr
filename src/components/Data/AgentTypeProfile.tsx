@@ -68,7 +68,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                     <hr />
                     <section className='section is-condensed'>
                         <div className='container'>
-                            {this.state.profile.AgentProfiles.map(ap => <AgentProfile agentProfile={ap} />)}
+                            {this.state.profile.AgentProfiles.map(ap => <AgentProfile key={ap.Name} agentProfile={ap} />)}
                         </div>
                     </section>
                 </div>
