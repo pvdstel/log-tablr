@@ -10,7 +10,10 @@ export default function Header() {
                     Log Tablr
                 </h1>
                 <p className='subtitle'>
-                    GOAL log viewer <span className='repo-text'>by <a href={REPO}>@pvdstel</a></span>
+                    GOAL log viewer
+                    <span className='repo-text'> by {}
+                        <a href={REPO} target='_blank' rel='noopener noreferrer'>@pvdstel</a>
+                    </span>
                 </p>
             </div>
         </header>
