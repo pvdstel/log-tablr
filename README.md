@@ -28,3 +28,6 @@ with the JSON output of _GOALLogAnalyser_
 For development purposes, use <kbd>npm run dev</kbd> to start
 [webpack-dev-server](https://github.com/webpack/webpack-dev-server). To build a
 development/non-production version of the application, use <kbd>npm run build</kbd>.
+
+## Contributing
+Contributions are definitely welcome. If you'd like to see a new feature, create a pull request or an issue.
