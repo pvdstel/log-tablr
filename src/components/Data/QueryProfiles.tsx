@@ -31,7 +31,7 @@ export default class QueryProfiles extends React.Component<IQueryProfilesProps, 
                 <table className='table is-striped is-fullwidth'>
                     <thead>
                         <tr>
-                            <th>Query</th>
+                            <th className='sortable' onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Query.localeCompare(b.Query)) })}>Query</th>
                             <th className='sortable' onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Hits - b.Hits) })}>Hits</th>
                             <th className='sortable' onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Misses - b.Misses) })}>Misses</th>
                             <th className='sortable' onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Times - b.Times) })}>Times</th>
@@ -53,7 +53,7 @@ export default class QueryProfiles extends React.Component<IQueryProfilesProps, 
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>Query</th>
+                            <th className='sortable' onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Query.localeCompare(b.Query)) })}>Query</th>
                             <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Hits - b.Hits) })}>Hits</th>
                             <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Misses - b.Misses) })}>Misses</th>
                             <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Times - b.Times) })}>Times</th>
