@@ -25,6 +25,6 @@ application
 with the JSON output of _GOALLogAnalyser_
 7. Open dist/index.html in a modern web browser
 
-For development purposes, use <kbd>npm run dev</kbd> to start [webpack-dev-server]
-(https://github.com/webpack/webpack-dev-server). To build a
+For development purposes, use <kbd>npm run dev</kbd> to start
+[webpack-dev-server](https://github.com/webpack/webpack-dev-server). To build a
 development/non-production version of the application, use <kbd>npm run build</kbd>.
