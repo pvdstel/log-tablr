@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 
 import { SELECT_EMPTY_VALUE } from 'src/constants';
 import { AgentTypeProfile } from './structures/exportFormat';
-import Header from './components/header';
+import Header from './components/Header';
 import TOC from './components/TOC';
 import DataRenderer from './components/DataRenderer';
 

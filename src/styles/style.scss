@@ -1,3 +1,6 @@
+@import '../../node_modules/bulma/sass/utilities/initial-variables';
+@import '../../node_modules/bulma/sass/utilities/derived-variables';
+
 body {
     padding-bottom: 50vh; // for reading comfort
 }
@@ -6,6 +9,18 @@ body {
     &.is-condensed {
         padding-top: 0rem;
         padding-bottom: 0rem;
+    }
+}
+
+.repo-text {
+    color: $grey-lighter;
+
+    a {
+        color: $grey-lighter;
+
+        &:hover {
+            color: $primary;
+        }
     }
 }
 
