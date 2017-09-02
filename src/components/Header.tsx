@@ -13,6 +13,8 @@ export default function Header() {
                     GOAL log viewer
                     <span className='repo-text'> by {}
                         <a href={REPO} target='_blank' rel='noopener noreferrer'>@pvdstel</a>
+                        {} and {}
+                        <a href='https://github.com/CptWesley/GOALLogAnalyser/' target='_blank' rel='noopener noreferrer'>@CptWesley</a>
                     </span>
                 </p>
             </div>
