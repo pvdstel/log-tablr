@@ -80,7 +80,7 @@ export default class AgentTypeProfile extends React.Component<IAgentTypeProfileP
                     <hr />
                     <section className='section is-condensed'>
                         <div className='container'>
-                            <AgentProfile agentProfile={this.state.profile.AgentProfiles.find(ap => ap.Name === this.state.agentTypeInstanceFilter)} />
+                            <AgentProfile agentProfile={this.state.profile.AgentProfiles.filter(ap => ap.Name === this.state.agentTypeInstanceFilter)[0]} />
                         </div>
                     </section>
                 </div>

@@ -89,7 +89,7 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
                                     <option value={SELECT_EMPTY_VALUE}>Agent type instance</option>
                                     <option value={SELECT_ALL_VALUE}>Display all</option>
                                     <optgroup label='Data'>
-                                        {this.state.data.find(atp => atp.Name === this.state.agentType).AgentProfiles.map(ap => (
+                                        {this.state.data.filter(atp => atp.Name === this.state.agentType)[0].AgentProfiles.map(ap => (
                                             <option key={ap.Name} value={ap.Name}>{ap.Name}</option>
                                         ))}
                                     </optgroup>
@@ -116,7 +116,7 @@ export default class TableOfContents extends React.Component<ITableOfContentsPro
                     }
                     {showAgentTypeInstanceToc &&
                         <ul className='toc-items'>
-                            {this.state.data.find(atp => atp.Name === this.state.agentType).AgentProfiles.map(ap => (
+                            {this.state.data.filter(atp => atp.Name === this.state.agentType)[0].AgentProfiles.map(ap => (
                                 <li key={ap.Name}>
                                     <a href={`#instance-${ap.Name}`}>{ap.Name}</a>
                                 </li>
