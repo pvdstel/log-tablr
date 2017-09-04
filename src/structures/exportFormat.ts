@@ -7,6 +7,7 @@ export interface AgentTypeProfile {
 }
 
 export interface ModuleProfile {
+    [key: string]: string | number;
     Name: string;
     Executions: number;
     TotalExecutionTime: number;
@@ -23,6 +24,7 @@ export interface AgentProfile {
 }
 
 export interface CycleProfile {
+    [key: string]: string | number;
     Count: number;
     TotalTime: number;
     AverageTime: number;
@@ -59,6 +61,7 @@ export interface CycleProfile {
 }
 
 export interface QueryProfile {
+    [key: string]: string | number;
     Query: string;
     Hits: number;
     Misses: number;

@@ -1,6 +1,9 @@
 import * as React from 'react';
 
 import { QueryProfile } from 'src/structures/exportFormat';
+import { BuildSorter } from 'src/sorting';
+
+const sorter = BuildSorter<QueryProfile>()
 
 export interface IQueryProfilesProps {
     queryProfiles: QueryProfile[];
@@ -32,12 +35,12 @@ export default class QueryProfiles extends React.Component<IQueryProfilesProps, 
                     <table className='table is-striped is-fullwidth'>
                         <thead>
                             <tr>
-                                <th className='sortable' onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Query.localeCompare(b.Query)) })}>Query</th>
-                                <th className='sortable' onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Hits - b.Hits) })}>Hits</th>
-                                <th className='sortable' onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Misses - b.Misses) })}>Misses</th>
-                                <th className='sortable' onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Times - b.Times) })}>Times</th>
-                                <th className='sortable' onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.TotalTime - b.TotalTime) })}>Total time</th>
-                                <th className='sortable' onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.AverageTime - b.AverageTime) })}>Average time</th>
+                                <th className='sortable' onClick={() => this.setState({ queryProfiles: sorter('Query', this.state.queryProfiles) })}>Query</th>
+                                <th className='sortable' onClick={() => this.setState({ queryProfiles: sorter('Hits', this.state.queryProfiles) })}>Hits</th>
+                                <th className='sortable' onClick={() => this.setState({ queryProfiles: sorter('Misses', this.state.queryProfiles) })}>Misses</th>
+                                <th className='sortable' onClick={() => this.setState({ queryProfiles: sorter('Times', this.state.queryProfiles) })}>Times</th>
+                                <th className='sortable' onClick={() => this.setState({ queryProfiles: sorter('TotalTime', this.state.queryProfiles) })}>Total time</th>
+                                <th className='sortable' onClick={() => this.setState({ queryProfiles: sorter('AverageTime', this.state.queryProfiles) })}>Average time</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -53,15 +56,15 @@ export default class QueryProfiles extends React.Component<IQueryProfilesProps, 
                             ))}
                         </tbody>
                         <tfoot>
-                            <tr>
-                                <th className='sortable' onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Query.localeCompare(b.Query)) })}>Query</th>
-                                <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Hits - b.Hits) })}>Hits</th>
-                                <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Misses - b.Misses) })}>Misses</th>
-                                <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.Times - b.Times) })}>Times</th>
-                                <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.TotalTime - b.TotalTime) })}>Total time</th>
-                                <th onClick={() => this.setState({ queryProfiles: this.state.queryProfiles.slice().sort((a, b) => a.AverageTime - b.AverageTime) })}>Average time</th>
-                            </tr>
-                        </tfoot>
+                        <tr>
+                        <th className='sortable' onClick={() => this.setState({ queryProfiles: sorter('Query', this.state.queryProfiles) })}>Query</th>
+                        <th className='sortable' onClick={() => this.setState({ queryProfiles: sorter('Hits', this.state.queryProfiles) })}>Hits</th>
+                        <th className='sortable' onClick={() => this.setState({ queryProfiles: sorter('Misses', this.state.queryProfiles) })}>Misses</th>
+                        <th className='sortable' onClick={() => this.setState({ queryProfiles: sorter('Times', this.state.queryProfiles) })}>Times</th>
+                        <th className='sortable' onClick={() => this.setState({ queryProfiles: sorter('TotalTime', this.state.queryProfiles) })}>Total time</th>
+                        <th className='sortable' onClick={() => this.setState({ queryProfiles: sorter('AverageTime', this.state.queryProfiles) })}>Average time</th>
+                    </tr>
+                </tfoot>
                     </table>
                 </div>
             </section>
