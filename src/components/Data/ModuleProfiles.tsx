@@ -28,40 +28,42 @@ export default class ModuleProfiles extends React.Component<IModuleProfilesProps
     render() {
         return (
             <section>
-                <table className='table is-striped is-fullwidth'>
-                    <thead>
-                        <tr>
-                            <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.Name.localeCompare(b.Name)) })}>Name</th>
-                            <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.Executions - b.Executions) })}>Executions</th>
-                            <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.TotalExecutionTime - b.TotalExecutionTime) })}>Total execution time</th>
-                            <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.ShortestExecutionTime - b.ShortestExecutionTime) })}>Shortest execution time</th>
-                            <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.LongestExecutionTime - b.LongestExecutionTime) })}>Longest execution time</th>
-                            <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.AverageExecutionTime - b.AverageExecutionTime) })}>Average execution time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {this.state.moduleProfiles.map((mp, i) => (
-                            <tr key={i}>
-                                <td>{mp.Name}</td>
-                                <td>{mp.Executions}</td>
-                                <td>{mp.TotalExecutionTime}</td>
-                                <td>{mp.ShortestExecutionTime}</td>
-                                <td>{mp.LongestExecutionTime}</td>
-                                <td>{mp.AverageExecutionTime}</td>
+                <div className='table-responsive'>
+                    <table className='table is-striped is-fullwidth'>
+                        <thead>
+                            <tr>
+                                <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.Name.localeCompare(b.Name)) })}>Name</th>
+                                <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.Executions - b.Executions) })}>Executions</th>
+                                <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.TotalExecutionTime - b.TotalExecutionTime) })}>Total execution time</th>
+                                <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.ShortestExecutionTime - b.ShortestExecutionTime) })}>Shortest execution time</th>
+                                <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.LongestExecutionTime - b.LongestExecutionTime) })}>Longest execution time</th>
+                                <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.AverageExecutionTime - b.AverageExecutionTime) })}>Average execution time</th>
                             </tr>
-                        ))}
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.Name.localeCompare(b.Name)) })}>Name</th>
-                            <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.Executions - b.Executions) })}>Executions</th>
-                            <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.TotalExecutionTime - b.TotalExecutionTime) })}>Total execution time</th>
-                            <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.ShortestExecutionTime - b.ShortestExecutionTime) })}>Shortest execution time</th>
-                            <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.LongestExecutionTime - b.LongestExecutionTime) })}>Longest execution time</th>
-                            <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.AverageExecutionTime - b.AverageExecutionTime) })}>Average execution time</th>
-                        </tr>
-                    </tfoot>
-                </table>
+                        </thead>
+                        <tbody>
+                            {this.state.moduleProfiles.map((mp, i) => (
+                                <tr key={i}>
+                                    <td>{mp.Name}</td>
+                                    <td>{mp.Executions}</td>
+                                    <td>{mp.TotalExecutionTime}</td>
+                                    <td>{mp.ShortestExecutionTime}</td>
+                                    <td>{mp.LongestExecutionTime}</td>
+                                    <td>{mp.AverageExecutionTime}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.Name.localeCompare(b.Name)) })}>Name</th>
+                                <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.Executions - b.Executions) })}>Executions</th>
+                                <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.TotalExecutionTime - b.TotalExecutionTime) })}>Total execution time</th>
+                                <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.ShortestExecutionTime - b.ShortestExecutionTime) })}>Shortest execution time</th>
+                                <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.LongestExecutionTime - b.LongestExecutionTime) })}>Longest execution time</th>
+                                <th className='sortable' onClick={() => this.setState({ moduleProfiles: this.state.moduleProfiles.slice().sort((a, b) => a.AverageExecutionTime - b.AverageExecutionTime) })}>Average execution time</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
             </section>
         );
     }

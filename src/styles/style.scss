@@ -46,6 +46,10 @@ body {
     }
 }
 
+.table-responsive {
+    overflow-x: auto;
+}
+
 th.sortable {
     cursor: pointer;
 }
