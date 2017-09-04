@@ -3,8 +3,7 @@ A React-based web application for displaying processed
 [GOAL](https://bitbucket.org/goalhub/) logs.
 
 This application is designed for the data format used by
-[GOALLogAnalyser](https://github.com/CptWesley/GOALLogAnalyser) (made by
-[@CptWesley](https://github.com/CptWesley)).
+[GOALLogAnalyser](https://github.com/CptWesley/GOALLogAnalyser).
 
 ## Current features
 - Parsing processed log files
