@@ -21,7 +21,7 @@ interface IAppState {
 
 export default class App extends React.Component<undefined, IAppState> {
     constructor() {
-        super();
+        super(undefined);
 
         this.state = {
             data: [],
